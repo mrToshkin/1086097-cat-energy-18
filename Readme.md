@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Леонов](https://up.htmlacademy.ru/adaptive/18/user/1086097).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
