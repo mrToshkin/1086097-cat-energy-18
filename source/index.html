@@ -5,8 +5,57 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+      	<img class="page-header__logo-image" src="img/logo.svg" width="" height="" alt="Cat">
+      </a>
+      <img class="page-header__logo-image-2" src="img/logo-2.svg" width="" height="" alt="Cat energy">
+      <nav class="main-nav">
+      	<button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      	<div class="main-nav__wrapper">      		  
+          <ul class="main-nav-list site-list">
+ 		    <li class="site-list__item site-list__item--active"><a href="#">главная</a></li>
+ 		    <li class="site-list__item"><a href="#">каталог продукции</a></li>
+ 		    <li class="site-list__item"><a href="#">подбор программы</a></li>
+ 		  </ul>  
+ 		</div>   	
+      </nav>    	
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Питание для Ваших любимых котов</h1>	
+
+      <section class="food">
+      	<header class="food__header">
+      	  <h2 class="food__heading">Функциональное питание для котов</h2>
+      	  <p class="food__text">Занялся собой? Займись котом!</p>		
+        </header>
+        <img class="food-image" src="img/food.jpg" width="" height="" alt="Cat-energy Курица">
+        <a class="food-button" href="#">Подобрать программу</a>
+      </section>
+
+      <section class="categories">
+
+      	<h2 class="visually-hidden">Что выбираешь: сбросить лишний вес или наростить мышцы?</h2>
+        <ul class="categories__list mass-list">
+          <li class="mass-item">
+            <h3 class="mass-heading">Похудение</h3>
+            <p class="mass-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="mass-button" href="#">Каталог slim</a>
+          </li>
+
+          <li class="mass-item">
+            <h3 class="mass-heading">Набор массы</h3>
+            <p class="mass-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="mass-button" href="#">Каталог pro</a>
+          </li>                  	
+        </ul>   
+
+      </section>
+
+    	
+    </main>	
 
   </body>
 </html>
