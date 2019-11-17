@@ -1,29 +1,42 @@
 .page-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
-  width: 150px;
+  width: 190px;
+}
+
+.page-header__logo-image {
+  display: block;
+}
+
+.main-nav {
+  position: relative;
+
+  width: 90px;
 }
 
 .main-nav__toggle {
-  position: relative;
+  .mapa();
 
   width: 130px;
 
   border: 0;
-
-  background: none;
 }
 
 .main-nav__toggle::after {
   position: absolute;
+  top: calc(50% - 9px);
+  right: 0;
+
+  display: block;
 
   content: "";
 
-  width: 130px;
-  height: 50px;
+  width: 24px;
+  height: 18px;
 
   background-image: url(../../img/icon-mobile-menu.svg);
   background-repeat: no-repeat;
@@ -31,8 +44,13 @@
 }
 
 .main-nav__wrapper {
-  display: none;
+  position: absolute;
+  left: -190px;
+  top: 100%;
 
-  position: relative;
-  bac
+  width: 280px;
+  display: none;
 }
+
+
+
