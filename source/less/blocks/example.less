@@ -1,10 +1,9 @@
 .example {
-  position: relative;
-  left: -20px;
+  width: 320px;
 
-  width: 280px;
-
-  padding: 30px 20px;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding-bottom: 30px;
 
   background-color: @lightgray;
 }
@@ -12,6 +11,7 @@
 .example__heading {
   .mapa();
   margin-bottom: 20px;
+  margin-top: 30px;
 
   display: inline-block;
   vertical-align: top;
@@ -36,7 +36,6 @@
 
 .example__tr {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -104,13 +103,13 @@
 .example__slider-toggles {
   position: relative;
 
-  .mapa();
-  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
 
   width: 200px;
 
-  display: flex;
-  justify-content: space-between;
+  .mapa();
+  margin: 40px auto 0;
 }
 
 .example__slider-toggle {
@@ -121,8 +120,6 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   .font-size(16px; 20px);
-
-  background-color: none;
 }
 
 .example__slider-indicator {
@@ -130,10 +127,10 @@
   left: calc(50% - 42px);
   bottom: 2px;
 
+  width: 84px;
+
   .mapa();
   padding: 7px 0;
-
-  width: 84px;
 
   border: 1px solid @lightgray2;
   border-radius: 7px;
@@ -141,8 +138,26 @@
 
 .example__slider-indicator::before {
   position: absolute;
-  bottom: 3.5px;
+  bottom: 3.7px;
   left: 5px;
+
+  content: "";
+
+  width: 35px;
+
+  padding: 3px 0;
+
+  border-radius: 5px;
+
+  background-color: @green;
+}
+
+.example__slider-indicator::after {
+  display: none;
+
+  position: absolute;
+  bottom: 3.7px;
+  right: 5px;
 
   content: "";
 
