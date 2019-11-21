@@ -12,9 +12,9 @@
     <header class="page-header container2">
 
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat-energy">
       </a>
-      <nav class="main-nav container main-nav--opened">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -125,6 +125,30 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var main-nav = document.querySelector(".main-nav");
+      var navtoggle = document.querySelector(".main-nav__toggle");
+
+      // mainnav.classList.remove("main-nav--nojs");
+
+      navtoggle.addEventListener("click", function(evt) {
+
+        evt.preventDefault();
+
+        if (mainnav.classList.contains("main-nav--closed")) {
+          main-nav.classList.remove("main-nav--closed");
+          main-nav.classList.add("main-nav--opened");
+        }
+
+        else {
+          main-nav.classList.remove("main-nav--opened");
+          main-nav.classList.add("main-nav--closed");
+        }
+
+      });
+
+    </script>
 
   </body>
 </html>
