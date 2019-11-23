@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header container2">
+    <header class="page-header container-mobile2">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
       </a>
@@ -27,7 +27,7 @@
       <h1 class="catalog-main__heading">Каталог продукции</h1>
 
       <section class="products">
-        <div class="container">
+        <div class="container-mobile">
           <h2 class="visually-hidden">Продукция Cat Energy</h2>
           <ul class="products__list">
             <li class="products__item">
@@ -188,73 +188,81 @@
       </section>
 
       <section class="allproducts">
-        <h2 class="visually-hidden">Весь ассортимент продкуции Cat Energy</h2>
-        <b class="allproducts__heading">Показать еще 100500 товаров</b>
-        <p class="allproducts__text">На самом деле вкусов гораздо больше!</p>
-        <a href="#">показать все</a>
-      </section>
-
-      <section class="addproducts">
-
-        <ul class="addproducts__list">
-          <li class="addproducts__item">
-            <table class="addproducts__table">
-              <tr>
-                <th colspan="2" class="addproducts__field">Сахарозаменитель</th>
-              </tr>
-              <tr>
-                <td class="addproducts__value">1 упаковка (100 г)</td>
-                <td class="addproducts__value">200 Р.</td>
-              </tr>
-            </table>
-          </li>
-
-          <li class="addproducts__item">
-            <table class="addproducts__table">
-              <tr>
-                <th colspan="2" class="addproducts__field">Питьевая вода</th>
-              </tr>
-              <tr>
-                <td class="addproducts__value">5 литров</td>
-                <td class="addproducts__value">50 Р.</td>
-              </tr>
-            </table>
-          </li>
-
-          <li class="addproducts__item">
-            <table class="addproducts__table">
-              <tr>
-                <th colspan="2" class="addproducts__field">Молоко</th>
-              </tr>
-              <tr>
-                <td class="addproducts__value">1 литр</td>
-                <td class="addproducts__value">500 Р.</td>
-              </tr>
-            </table>
-          </li>
-
-          <li class="addproducts__item">
-            <table class="addproducts__table">
-              <tr>
-                <th colspan="2" class="addproducts__field">Витамины</th>
-              </tr>
-              <tr>
-                <td class="addproducts__value">1 упаковка (30 г)</td>
-                <td class="addproducts__value">300 Р.</td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-      </section>
-
-      <section class="present">
-        <h2 class="visually-hidden">Сделай заказ и получи подарок!</h2>
-        <div class="present__box">
-          <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="container-mobile">
+          <h2 class="visually-hidden">Весь ассортимент продкуции Cat Energy</h2>
+          <b class="allproducts__heading">Показать еще 100500 товаров</b>
+          <p class="allproducts__text">На самом деле вкусов гораздо больше!</p>
+          <a class= "button allproducts__button" href="#">показать все</a>
         </div>
       </section>
 
-      <section class="contacts container">
+      <section class="addproducts">
+        <div class="container-mobile">
+          <h2 class="addproducts__heading">Дополнительные товары</h2>
+          <ul class="addproducts__list">
+            <li class="addproducts__item">
+              <table class="addproducts__table">
+                <tr class="addproducts__tr">
+                  <th colspan="2" class="addproducts__field">Сахарозаменитель</th>
+                </tr>
+                <tr class="addproducts__tr">
+                  <td class="addproducts__value">1 упаковка (100 г)</td>
+                  <td class="addproducts__value">200 Р.</td>
+                </tr>
+              </table>
+              <a class= "button addproducts__button" href="#">заказать</a>
+            </li>
+
+            <li class="addproducts__item">
+              <table class="addproducts__table">
+                <tr class="addproducts__tr">
+                  <th colspan="2" class="addproducts__field">Питьевая вода</th>
+                </tr>
+                <tr class="addproducts__tr">
+                  <td class="addproducts__value">5 литров</td>
+                  <td class="addproducts__value">50 Р.</td>
+                </tr>
+              </table>
+              <a class= "button addproducts__button" href="#">заказать</a>
+            </li>
+
+            <li class="addproducts__item">
+              <table class="addproducts__table">
+                <tr class="addproducts__tr">
+                  <th colspan="2" class="addproducts__field">Молоко</th>
+                </tr>
+                <tr class="addproducts__tr">
+                  <td class="addproducts__value">1 литр</td>
+                  <td class="addproducts__value">500 Р.</td>
+                </tr>
+              </table>
+              <a class= "button addproducts__button" href="#">заказать</a>
+            </li>
+
+            <li class="addproducts__item">
+              <table class="addproducts__table">
+                <tr class="addproducts__tr">
+                  <th colspan="2" class="addproducts__field">Витамины</th>
+                </tr>
+                <tr class="addproducts__tr">
+                  <td class="addproducts__value">1 упаковка (30 г)</td>
+                  <td class="addproducts__value">300 Р.</td>
+                </tr>
+              </table>
+              <a class= "button addproducts__button" href="#">заказать</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="present container-mobile">
+        <h2 class="visually-hidden">Сделай заказ и получи подарок!</h2>
+        <div class="present__box">
+          <p class="present__text">Закажите все<br>и получите чехол для кота в подарок!</p>
+        </div>
+      </section>
+
+      <section class="contacts container-mobile">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__wrapper">
           <p class="contacts__text">приглашаем<br>к сотрудничеству дилеров! </p>
@@ -266,7 +274,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container-mobile">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
         <ul class="page-footer__list social-list">

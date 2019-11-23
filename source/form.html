@@ -7,12 +7,11 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header container-mobile2">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo.svg" width="" height="" alt="Cat">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
       </a>
-      <img class="page-header__logo-image2" src="img/logo-2.svg" width="" height="" alt="Cat energy">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav-list site-list">
@@ -27,12 +26,12 @@
     <main class="page-form">
       <h1 class="visually-hidden">Подберите программу питания для вашего питомца</h1>
 
-      <section class="programm">
+      <section class="programm container-mobile">
         <h2 class="programm__heading">Подбор программы</h2>
         <p class="programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <form class="programm__form form-programm" action="echo/htmlacademy.ru" method="post">
-          <fieldset class="form-programm__field">
+          <fieldset class="form-programm__field form-programm__flex-cat">
             <legend class="visually-hidden">данные вашего кота</legend>
             <p class="form-programm__cat">
               <label class="form-programm__title" for="cat">имя:<sup>*</sup></label>
@@ -48,34 +47,36 @@
             </p>
           </fieldset>
 
-          <fieldset class="form-programm__field">
+          <fieldset class="form-programm__field form-programm__flex-select">
             <legend class="visually-hidden">программы</legend>
             <p class="form-programm__select">
               <input class="visually-hidden" type="radio" id="thin" name="thin" checked="">
               <span class="form-programm__radio-indicator"></span>
-              <label class="form-programm__title" for="thin">похудение</label>
+              <label class="form-programm__title2" for="thin">похудение</label>
             </p>
             <p class="form-programm__select">
               <input class="visually-hidden" type="radio" id="big" name="big">
               <span class="form-programm__radio-indicator"></span>
-              <label class="form-programm__title" for="big">набор массы</label>
+              <label class="form-programm__title2" for="big">набор массы</label>
             </p>
             <p class="form-programm__select">
               <input class="visually-hidden" type="radio" id="advice" name="advice">
               <span class="form-programm__radio-indicator"></span>
-              <label class="form-programm__title" for="advice">не знаю (нужен ваш совет)</label>
+              <label class="form-programm__title2" for="advice">не знаю (нужен ваш совет)</label>
             </p>
           </fieldset>
           <fieldset class="form-programm__field">
             <legend class="form-programm__heading">Контактные данные<br>(владельца кота)</legend>
-            <p class="form-programm__data">
-              <label class="form-programm__title" for="mail">e-mail:<sup>*</sup></label>
-              <input class="form-programm__input" type="text" id="mail" name="mail" value="leonov-nic@yandex.ru">
-            </p>
-            <p class="form-programm__data">
-              <label class="form-programm__title" for="tel">телефон:<sup>*</sup></label>
-              <input class="form-programm__input" type="text" id="tel" name="tel" value="8 (960) 900-60-90">
-            </p>
+            <div class="form-programm__flex-data">
+              <p class="form-programm__data">
+                <label class="form-programm__title" for="mail">e-mail:<sup>*</sup></label>
+                <input class="form-programm__input" type="text" id="mail" name="mail" value="leonov-nic@yandex.ru">
+              </p>
+              <p class="form-programm__data">
+                <label class="form-programm__title" for="tel">телефон:<sup>*</sup></label>
+                <input class="form-programm__input" type="text" id="tel" name="tel" value="8 (960) 900-60-90">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form-programm__field">
             <legend class="form-programm__heading">Комментарий</legend>
@@ -105,7 +106,7 @@
             </p>
           </fieldset>
           <p>
-            <input class="form-programm__button" type="submit" name="submit" value="Отправить заявку">
+            <input class="button form-programm__button" type="submit" name="submit" value="Отправить заявку">
           </p>
         </form>
         <small class="programm__small">
@@ -113,33 +114,33 @@
         </small>
       </section>
 
-      <section class="contacts">
+      <section class="contacts container-mobile">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров! </p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <div class="contacts__map">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">приглашаем<br>к сотрудничеству дилеров! </p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
+        <div class="contacts__map"></div>
       </section>
 
     </main>
 
     <footer class="page-footer">
+      <div class="container-mobile">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
-      <img class="page-footer__logo-image2" src="img/logo-2.svg" width="" height="" alt="Cat energy">
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item"><a href="#"><img src="img/icon-vk.svg" width="60" height="20" alt="мы в контакте"></a></li>
+          <li class="social-list__item"><a href="#"><img src="img/icon-insta.svg" width="60" height="20" alt="мы в инстаграм"></a></li>
+          <li class="social-list__item"><a href="#"><img src="img/icon-fb.svg" width="60" height="20" alt="мы в фейсбуке"></a></li>
+        </ul>
 
-      <ul class="page-footer__social-list">
-        <li class="social-list__item"><a href="#"><img src="img/pict-1" width="" height="" alt="мы в контакте"></a></li>
-        <li class="social-list__item"><a href="#"><img src="img/pict-2" width="" height="" alt="мы в инстаграм"></a></li>
-        <li class="social-list__item"><a href="#"><img src="img/pict-3" width="" height="" alt="мы в фейсбуке"></a></li>
-      </ul>
-
-      <div class="page-footer__academy">
-        <p>HTML Academy</p>
-        <img src="img/logo-academy" width="" height="" alt="Логотип HTML-academy">
+        <div class="page-footer__wrapper-academy">
+          <p class="page-footer__academy">HTML Academy</p>
+          <img src="img/htmlacademy2.svg" width="27" height="34.3" alt="Логотип HTML-academy">
+        </div>
       </div>
-
     </footer>
-
   </body>
 
 </html>

@@ -1,0 +1,215 @@
+.form-programm__input[type="text"],
+.form-programm__area[placeholder] {
+  .mapa();
+
+  padding: 14px 0 14px 17px;
+
+  border: 1px solid @lightgray2;
+
+  font-family: "Oswald", sans-serif;
+  .font-size(16px; 18px);
+  font-weight: 100;
+  text-transform: uppercase;
+
+  color: @gray;
+}
+
+.form-programm__field {
+  .mapa();
+
+  border: 0;
+}
+
+.form-programm__title {
+  .mapa();
+  padding-right: 18px;
+  padding-top: 10px;
+}
+
+.form-programm__title[for="age"] {
+  padding-top: 15px;
+}
+
+.form-programm__flex-cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-programm__cat {
+  display: flex;
+  justify-content: space-between;
+
+  width: 280px;
+
+  .mapa();
+  margin-bottom: 15px;
+}
+
+.form-programm__cat .form-programm__input {
+  width: 100%;
+}
+
+.form-programm__input[name="age"] {
+  width: calc(100% - 135px);
+}
+
+.form-programm__flex-select {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding: 25px 0 40px;
+
+  &::before {
+    position: absolute;
+    left: -20px;
+    top: 15px;
+
+    content: "";
+
+    width: 320px;
+    height: 1px;
+
+    background: @lightgray2;
+  }
+
+  &::after {
+    position: absolute;
+    left: -20px;
+    bottom: 25px;
+
+    content: "";
+
+    width: 320px;
+    height: 1px;
+
+    background: @lightgray2;
+  }
+}
+
+.form-programm__title2 {
+  .mapa();
+  padding-left: 46px;
+}
+
+.form-programm__radio-indicator {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+
+    content: "";
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    border: 1px solid @lightgray2;
+  }
+
+  &::before {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+
+    content: "";
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: @white;
+  }
+}
+
+.form-programm__radio-indicator:hover {
+  &::before {
+    background: red;
+  }
+}
+
+.form-programm__select input[type="radio"]:checked + .form-programm__radio-indicator {
+  &::before {
+    background: @green;
+  }
+}
+
+// .form-programm__select input[type="radio"]:disabled + .form-programm__radio-indicator {
+//     &::before {
+//     background: none;
+//   }
+// }
+
+.form-programm__select input[type="radio"]:focus + .form-programm__radio-indicator {
+  &::after {
+    box-shadow: 0 0 5px 3px lightblue;
+  }
+}
+
+.form-programm__heading {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .mapa();
+  margin-bottom: 20px;
+  padding-right: 5px;
+
+  .font-size(24px; 24px);
+  font-weight: 100;
+  text-transform: none;
+
+  color: @black;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: -100px;
+
+    content: "";
+
+    width: 100px;
+    height: 4px;
+
+    background-color: @green;
+  }
+}
+
+.form-programm__flex-data {
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+}
+
+.form-programm__data {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.form-programm__data .form-programm__input[name="mail"] {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    content: "";
+
+    width: 150px;
+    height: 50px;
+
+    background: red;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+  }
+}

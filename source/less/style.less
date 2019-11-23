@@ -11,6 +11,11 @@
 @import "blocks/contacts.less";
 @import "blocks/page-footer.less";
 @import "blocks/products.less";
+@import "blocks/allproducts.less";
+@import "blocks/addproducts.less";
+@import "blocks/present.less";
+@import "blocks/programm.less";
+@import "blocks/form-programm.less";
 
 body {
   .mapa();
@@ -25,13 +30,13 @@ body {
   color: @gray;
 }
 
-.container {
+.container-mobile {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.container2 {
+.container-mobile2 {
   width: 320px;
   margin: 0 auto;
 }
@@ -62,6 +67,17 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.allproducts__button {
+  display: inline-block;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: red;
+  background: red;
 }
 
 .button {
