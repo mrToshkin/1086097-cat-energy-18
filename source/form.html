@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header container-mobile2">
+    <header class="page-header container2">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
       </a>
@@ -26,7 +26,7 @@
     <main class="page-form">
       <h1 class="visually-hidden">Подберите программу питания для вашего питомца</h1>
 
-      <section class="programm container-mobile">
+      <section class="programm container">
         <h2 class="programm__heading">Подбор программы</h2>
         <p class="programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
@@ -79,30 +79,32 @@
             </div>
           </fieldset>
           <fieldset class="form-programm__field">
-            <legend class="form-programm__heading">Комментарий</legend>
-            <textarea class="form-programm__area" name="area" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="form-programm_flex-area">
+              <legend class="form-programm__heading">Комментарий</legend>
+              <textarea class="form-programm__area" name="area" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
-          <fieldset class="form-programm__field">
+          <fieldset class="form-programm__field form-programm_flex-add">
             <legend class="form-programm__heading">Дополнительно</legend>
             <p class="form-programm__add">
               <input class="visually-hidden" type="checkbox" id="sugar" name="sugar">
               <span class="form-programm__checkbox-indicator"></span>
-              <label class="form-programm__title" for="sugar">сахарозаменитель</label>
+              <label class="form-programm__title3" for="sugar">сахарозаменитель</label>
             </p>
             <p class="form-programm__add">
               <input class="visually-hidden" type="checkbox" id="water" name="water">
               <span class="form-programm__checkbox-indicator"></span>
-              <label class="form-programm__title" for="water">питьевая вода</label>
+              <label class="form-programm__title3" for="water">питьевая вода</label>
             </p>
             <p class="form-programm__add">
               <input class="visually-hidden" type="checkbox" id="milk" name="milk">
               <span class="form-programm__checkbox-indicator"></span>
-              <label class="form-programm__title" for="milk">молоко</label>
+              <label class="form-programm__title3" for="milk">молоко</label>
             </p>
             <p class="form-programm__add">
               <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
               <span class="form-programm__checkbox-indicator"></span>
-              <label class="form-programm__title" for="vitamins">витамины</label>
+              <label class="form-programm__title3" for="vitamins">витамины</label>
             </p>
           </fieldset>
           <p>
@@ -114,7 +116,7 @@
         </small>
       </section>
 
-      <section class="contacts container-mobile">
+      <section class="contacts container">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__wrapper">
           <p class="contacts__text">приглашаем<br>к сотрудничеству дилеров! </p>
@@ -126,7 +128,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container-mobile">
+      <div class="container">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
         <ul class="page-footer__list social-list">

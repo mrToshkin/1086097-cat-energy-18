@@ -30,13 +30,13 @@ body {
   color: @gray;
 }
 
-.container-mobile {
+.container {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.container-mobile2 {
+.container2 {
   width: 320px;
   margin: 0 auto;
 }
@@ -69,17 +69,6 @@ a {
   overflow: hidden;
 }
 
-.allproducts__button {
-  display: inline-block;
-
-  width: 100%;
-
-  text-align: center;
-
-  color: red;
-  background: red;
-}
-
 .button {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -90,4 +79,23 @@ a {
 
   display: inline-block;
   vertical-align: top;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .container2 {
+    // width: 768px;
+    margin: 0 auto;
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .button {
+    padding: 15px 25px;
+  }
 }

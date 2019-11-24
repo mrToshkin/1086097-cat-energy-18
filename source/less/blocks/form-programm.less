@@ -11,6 +11,7 @@
   font-weight: 100;
   text-transform: uppercase;
 
+
   color: @gray;
 }
 
@@ -44,6 +45,16 @@
 
   .mapa();
   margin-bottom: 15px;
+}
+
+.form-programm__data {
+  display: flex;
+  justify-content: space-between;
+
+  .mapa();
+  margin-bottom: 15px;
+
+  width: 100%;
 }
 
 .form-programm__cat .form-programm__input {
@@ -186,30 +197,145 @@
   flex-wrap: wrap;
 }
 
-.form-programm__data {
-  display: flex;
-  justify-content: space-between;
-
+.form-programm__input[name="mail"] {
   width: 100%;
+  background-image: url("../img/icon-mail.svg");
+  background-size: 150px 15px;
+  background-position: 118px center;
+  background-repeat: no-repeat;
 }
 
-.form-programm__data .form-programm__input[name="mail"] {
-  position: relative;
+.form-programm__input[name="tel"] {
   width: 100%;
+  background-image: url("../img/icon-phone.svg");
+  background-size: 150px 21px;
+  background-position: 100px center;
+  background-repeat: no-repeat;
+}
+
+.form-programm_flex-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-programm_flex-area .form-programm__heading {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  &::after {
+    right: -20px;
+    width: 160px;
+  }
+}
+
+.form-programm__area[placeholder] {
+  padding-top: 14px;
+  padding-bottom: 120px;
+  padding-left: 10px;
+
+  font-weight: 300;
+}
+
+.form-programm_flex-add {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-programm_flex-add .form-programm__heading {
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  &::after {
+    right: -140px;
+    width: 135px;
+  }
+}
+
+.form-programm_flex-add2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-programm__add {
+  width: 100%;
+
+  .mapa();
+
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-programm__title3 {
+  padding-left: 50px;
+}
+
+.form-programm__add .form-programm__checkbox-indicator {
+  cursor: pointer;
 
   &::after {
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 0;
+    top: -3px;
 
     content: "";
 
-    width: 150px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 
+    border: 1px solid @lightgray2;
+  }
+}
+
+.form-programm__add .form-programm__checkbox-indicator:hover {
+  &::before {
     background: red;
+  }
+}
 
-    background-image: url("../img/icon-mail.svg");
+.form-programm__add input[type="checkbox"]:checked + .form-programm__checkbox-indicator {
+  &::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 100;
+
+    content: "";
+
+    width: 21px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
+}
+
+// .form-programm__select input[type="radio"]:disabled + .form-programm__radio-indicator {
+//     &::before {
+//     background: none;
+//   }
+// }
+
+.form-programm__add input[type="checkbox"]:focus + .form-programm__checkbox-indicator {
+  &::after {
+    box-shadow: 0 0 5px 3px lightblue;
+  }
+}
+
+.programm__small {
+  .mapa();
+  padding: 0 50px;
+
+  font-family: "Arial", sans-serif;
+  .font-size(14px; 16px);
+}
+
+.form-programm__button {
+  width: 100%;
+
+  border: 0;
+
+  font-family: "Oswald", sans-serif;
+  .font-size(16px; 20px);
+  font-weight: 100;
+  text-transform: uppercase;
 }
