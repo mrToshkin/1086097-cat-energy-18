@@ -38,7 +38,7 @@
 .contacts__map {
   display: block;
   position: relative;
-  left: -20px;
+  left: calc(50% - 160px);
 
   padding: 200px 0;
   width: 320px;
@@ -46,5 +46,54 @@
   background-color: @lightgray;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px 400px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    background-color: transparent;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-top: 0;
+  }
+
+  .contacts__text {
+    width: 200px;
+
+    .font-size(20px; 25px);
+  }
+
+  .contacts__address {
+    width: 180px;
+
+    .font-size(16px; 20px);
+    text-align: right;
+  }
+
+  .contacts__city {
+    display: inline-block;
+
+    .mapa();
+
+    padding-top: 30px;
+  }
+
+  .contacts__map {
+    position: relative;
+    left: 0;
+
+    padding: 200px 0;
+
+    width: auto;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: 768px 400px;
+    background-position: 50% 0;
+  }
 }

@@ -66,3 +66,58 @@
 
   color: @gray;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+
+    padding: 65px 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .mapa();
+  }
+
+  .page-footer__logo {
+    .mapa();
+  }
+
+  .social-list {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .mapa-ul();
+    padding: 12px 0;
+  }
+
+  .social-list::after {
+    display: none;
+  }
+
+  .social-list::before {
+    display: none;
+  }
+
+  .social__image {
+    height: 22px;
+  }
+
+  .page-footer__wrapper-academy {
+    display: flex;
+    justify-content: space-between;
+
+    .mapa();
+  }
+
+  .page-footer__academy {
+    .mapa();
+    margin-right: 30px;
+  }
+}
