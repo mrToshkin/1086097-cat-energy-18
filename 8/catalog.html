@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>catalog</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/1086097-cat-energy-18/8/">
@@ -36,18 +37,20 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy PRO 500 г</b>
                 <table class="products__table">
-                  <tr>
-                    <td class="products__field">Объём</td>
-                    <td class="products__value">500г</td>
-                  </tr>
-                  <tr>
-                    <td class="products__field">Вкус</td>
-                    <td class="products__value">Курица</td>
-                  </tr>
-                  <tr>
-                    <td class="products__field">Цена</td>
-                    <td class="products__value">700 Р.</td>
-                  </tr>
+                  <tbody class="products__tablewrapper">
+                    <tr class="products__tr">
+                      <td class="products__field">Объём</td>
+                      <td class="products__value">500г</td>
+                    </tr>
+                    <tr class="products__tr">
+                      <td class="products__field">Вкус</td>
+                      <td class="products__value">Курица</td>
+                    </tr>
+                    <tr class="products__tr">
+                      <td class="products__field">Цена</td>
+                      <td class="products__value">700 Р.</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
               <a class="button products__button" href="#">Заказать</a>
@@ -263,11 +266,13 @@
         </div>
       </section>
 
-      <section class="contacts container">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <div class="contacts__wrapper">
-          <p class="contacts__text">приглашаем<br>к сотрудничеству дилеров! </p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">приглашаем<br>к сотрудничеству дилеров! </p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8  <span class="contacts__city">Санкт-Петербург</span></address>
+          </div>
         </div>
         <div class="contacts__map"></div>
       </section>
@@ -275,13 +280,13 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
         <ul class="page-footer__list social-list">
-          <li class="social-list__item"><a href="#"><img src="img/icon-vk.svg" width="60" height="20" alt="мы в контакте"></a></li>
-          <li class="social-list__item"><a href="#"><img src="img/icon-insta.svg" width="60" height="20" alt="мы в инстаграм"></a></li>
-          <li class="social-list__item"><a href="#"><img src="img/icon-fb.svg" width="60" height="20" alt="мы в фейсбуке"></a></li>
+          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-vk.svg" width="60" height="20" alt="мы в контакте"></a></li>
+          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-insta.svg" width="60" height="20" alt="мы в инстаграм"></a></li>
+          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-fb.svg" width="60" height="20" alt="мы в фейсбуке"></a></li>
         </ul>
 
         <div class="page-footer__wrapper-academy">
