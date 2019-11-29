@@ -29,11 +29,9 @@ body {
   color: @gray;
 }
 
-
 * {
   outline: 1px solid red;
 }
-
 
 .container {
   width: 280px;
@@ -98,6 +96,25 @@ a {
     margin: 0 auto;
     width: 708px;
     padding: 0 30px;
+  }
+
+  .button {
+    padding: 15px 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .container2 {
+    // width: 768px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .button {

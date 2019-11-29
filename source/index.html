@@ -18,9 +18,9 @@
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">подбор программы</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -35,7 +35,8 @@
           <h2 class="food__heading">Функциональное питание для котов</h2>
           <p class="food__text">Занялся собой? Займись котом!</p>
         </header>
-        <img class="food-image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat-energy Курица">
+        <img class="food-image" src="img/index-can-mobile@1x.png" width="280"
+        height="271" alt="Cat-energy Курица">
         <a class="button food__button" href="#">Подобрать программу</a>
       </section>
 
@@ -140,7 +141,7 @@
 
         evt.preventDefault();
 
-        if (mainnav.classList.contains("main-nav--closed")) {
+        if (main-nav.classList.contains("main-nav--closed")) {
           main-nav.classList.remove("main-nav--closed");
           main-nav.classList.add("main-nav--opened");
         }

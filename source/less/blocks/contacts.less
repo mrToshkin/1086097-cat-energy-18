@@ -97,3 +97,30 @@
     background-position: 50% 0;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: 1440px 400px;
+    background-position: 50% 0;
+  }
+
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 70px 90px 60px 75px;
+    margin-top: 55px;
+
+    width: 405px;
+
+    position: absolute;
+    z-index: 10;
+
+    background-color: white;
+  }
+}
