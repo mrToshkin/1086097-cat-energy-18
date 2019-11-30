@@ -61,15 +61,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy PRO 1000 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">1000г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Курица</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">1000 Р.</td>
                   </tr>
@@ -83,15 +83,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy PRO 500 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">500г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Рыба</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">700 Р.</td>
                   </tr>
@@ -105,15 +105,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy PRO 1000 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">1000г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Рыба</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">1000 Р.</td>
                   </tr>
@@ -127,15 +127,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy SLIM 500 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">500г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Гречка</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">400 Р.</td>
                   </tr>
@@ -149,15 +149,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy SLIM 1000 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">1000г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Гречка</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">700 Р.</td>
                   </tr>
@@ -171,15 +171,15 @@
               <div class="products__wrapper">
                 <b class="products__heading">Cat Energy SLIM 500 г</b>
                 <table class="products__table">
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Объём</td>
                     <td class="products__value">500г</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Вкус</td>
                     <td class="products__value">Рис</td>
                   </tr>
-                  <tr>
+                  <tr class="products__tr">
                     <td class="products__field">Цена</td>
                     <td class="products__value">500 Р.</td>
                   </tr>
@@ -187,73 +187,77 @@
               </div>
               <a class="button products__button" href="#">Заказать</a>
             </li>
+            <li class="products__item">
+              <b class="products__all-heading">Показать еще 100500 товаров</b>
+              <p class="products__all-text">На самом деле вкусов гораздо больше!</p>
+              <a class="button products__button" href="#">показать все</a>
+            </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="allproducts">
-        <div class="container">
-          <h2 class="visually-hidden">Весь ассортимент продкуции Cat Energy</h2>
-          <b class="allproducts__heading">Показать еще 100500 товаров</b>
-          <p class="allproducts__text">На самом деле вкусов гораздо больше!</p>
-          <a class= "button allproducts__button" href="#">показать все</a>
         </div>
       </section>
 
       <section class="addproducts">
         <div class="container">
-          <h2 class="addproducts__heading">Дополнительные товары</h2>
-          <ul class="addproducts__list">
+          <h2 class="addproducts__heading addproducts__wrapper">Дополнительные товары</h2>
+          <ul class="addproducts__list addproducts__wrapper">
             <li class="addproducts__item">
               <table class="addproducts__table">
-                <tr class="addproducts__tr">
-                  <th colspan="2" class="addproducts__field">Сахарозаменитель</th>
-                </tr>
-                <tr class="addproducts__tr">
-                  <td class="addproducts__value">1 упаковка (100 г)</td>
-                  <td class="addproducts__value">200 Р.</td>
-                </tr>
+                <tbody class="addproducts__table-wrapper">
+                  <tr class="addproducts__tr">
+                    <th colspan="2" class="addproducts__field">Сахарозаменитель</th>
+                  </tr>
+                  <tr class="addproducts__tr">
+                    <td class="addproducts__value">1 упаковка (100 г)</td>
+                    <td class="addproducts__cost">200 Р.</td>
+                  </tr>
+                </tbody>
               </table>
               <a class= "button addproducts__button" href="#">заказать</a>
             </li>
 
             <li class="addproducts__item">
               <table class="addproducts__table">
-                <tr class="addproducts__tr">
-                  <th colspan="2" class="addproducts__field">Питьевая вода</th>
-                </tr>
-                <tr class="addproducts__tr">
-                  <td class="addproducts__value">5 литров</td>
-                  <td class="addproducts__value">50 Р.</td>
-                </tr>
+                <tbody class="addproducts__table-wrapper">
+                  <tr class="addproducts__tr">
+                    <th colspan="2" class="addproducts__field">Питьевая вода</th>
+                  </tr>
+                  <tr class="addproducts__tr">
+                    <td class="addproducts__value">5 литров</td>
+                    <td class="addproducts__cost">50 Р.</td>
+                  </tr>
+                </tbody>
               </table>
               <a class= "button addproducts__button" href="#">заказать</a>
             </li>
 
             <li class="addproducts__item">
               <table class="addproducts__table">
-                <tr class="addproducts__tr">
-                  <th colspan="2" class="addproducts__field">Молоко</th>
-                </tr>
-                <tr class="addproducts__tr">
-                  <td class="addproducts__value">1 литр</td>
-                  <td class="addproducts__value">500 Р.</td>
-                </tr>
+                <tbody class="addproducts__table-wrapper">
+                  <tr class="addproducts__tr">
+                    <th colspan="2" class="addproducts__field">Молоко</th>
+                  </tr>
+                  <tr class="addproducts__tr">
+                    <td class="addproducts__value">1 литр</td>
+                    <td class="addproducts__cost">500 Р.</td>
+                  </tr>
+                </tbody>
               </table>
               <a class= "button addproducts__button" href="#">заказать</a>
             </li>
 
             <li class="addproducts__item">
               <table class="addproducts__table">
-                <tr class="addproducts__tr">
-                  <th colspan="2" class="addproducts__field">Витамины</th>
-                </tr>
-                <tr class="addproducts__tr">
-                  <td class="addproducts__value">1 упаковка (30 г)</td>
-                  <td class="addproducts__value">300 Р.</td>
-                </tr>
+                <tbody class="addproducts__table-wrapper">
+                  <tr class="addproducts__tr">
+                    <th colspan="2" class="addproducts__field">Витамины</th>
+                  </tr>
+                  <tr class="addproducts__tr">
+                    <td class="addproducts__value">1 упаковка (30 г)</td>
+                    <td class="addproducts__cost">300 Р.</td>
+                  </tr>
+                </tbody>
               </table>
-              <a class= "button addproducts__button" href="#">заказать</a>
+              <a class= "button addproducts__button addproducts__wrapper" href="#">заказать</a>
             </li>
           </ul>
         </div>
