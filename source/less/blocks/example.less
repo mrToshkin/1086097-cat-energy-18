@@ -341,3 +341,142 @@
     background-color: @green;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .example {
+    margin-top: 0;
+    background-image: linear-gradient(to bottom, @white 20%, @lightgray 20%, @lightgray);
+  }
+
+  .example__heading {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 67px;
+  }
+
+  .example__text {
+    width: 46.7%;
+    .mapa();
+
+    padding-right: 11.5%;
+    padding-top: 60px;
+
+
+    box-sizing: border-box;
+
+    min-height: 100px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+  }
+
+  .example__table {
+    order: 3;
+
+    position: absolute;
+    bottom: 70px;
+
+    width: 46.7%;
+
+    padding-right: 16.4%;
+    padding-bottom: 0;
+
+    box-sizing: border-box;
+  }
+
+  .example__wrapper-slider {
+    top: -60px;
+
+    width: 46.7%;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__item {
+    top: -70px;
+    left: 5%;
+  }
+
+  .example__image {
+    width: 520px;
+    height: 480px;
+  }
+
+  .example__tablewrapper {
+    width: 100%;
+  }
+
+  .example__tr:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .example__tr:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+
+    order: 2;
+  }
+
+  .example__tr:nth-child(3) {
+    width: 100%;
+
+    order: 3;
+
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .example__digit {
+    width: 28%;
+  }
+
+  .example__tr .example__result {
+    width: 100%;
+
+    justify-content: center;
+
+    padding-top: 30px;
+  }
+
+  .example__slider-toggles {
+    position: relative;
+
+    width: auto;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .example__slider-toggle {
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__slider-indicator {
+    left: calc(50% - 214px);
+    bottom: 20px;
+  }
+
+  .example__slider-indicator::before {
+    top: -13px;
+    left: calc(50% - 18px);
+  }
+
+  .example__slider-indicator::after {
+    bottom: -3px;
+    left: calc(50% - 4px);
+  }
+}
