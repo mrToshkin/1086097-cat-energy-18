@@ -10,7 +10,11 @@
   <body>
     <header class="page-header container2">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
+        <picture>
+          <source media="(min-width:1280px)" width="150" heigh="50" srcset="img/logo-desktop.svg" alt="Cat">
+          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg" alt="Cat">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
