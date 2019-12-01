@@ -11,6 +11,9 @@
 @import "blocks/contacts.less";
 @import "blocks/page-footer.less";
 @import "blocks/products.less";
+@import "blocks/addproducts.less";
+@import "blocks/programm.less";
+@import "blocks/form-programm.less";
 
 body {
   .mapa();
@@ -24,6 +27,10 @@ body {
 
   color: @gray;
 }
+
+// * {
+//   outline: 1px solid red;
+// }
 
 .container {
   width: 280px;
@@ -74,4 +81,40 @@ a {
 
   display: inline-block;
   vertical-align: top;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .container2 {
+    margin: 0 auto;
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .button {
+    padding: 15px 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .container2 {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .button {
+    padding: 15px 25px;
+  }
 }
