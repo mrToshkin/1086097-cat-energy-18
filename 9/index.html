@@ -14,8 +14,8 @@
 
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width:1280px)" width="150" heigh="50" srcset="img/logo-desktop.svg" alt="Cat">
-          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg" alt="Cat">
+          <source media="(min-width:1200px)" width="150" heigh="50" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
         </picture>
       </a>
@@ -41,7 +41,7 @@
           <p class="food__text">Занялся собой? Займись котом!</p>
         </header>
         <picture>
-          <source media="(min-width: 1280px)" width="552" heigh="449"
+          <source media="(min-width: 1200px)" width="552" heigh="449"
           srcset="img/index-can-desktop@1x.png" alt="Cat">
           <source media="(min-width: 768px)" width="708" heigh="608"
           srcset="img/index-can-tablet@1x.jpg" alt="Cat">
@@ -102,8 +102,20 @@
             </table>
             <div class="example__wrapper-slider">
               <ul class="example__list">
-                <li class="example__item"><img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Борис до"></li>
-                <li class="example__item"><img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Борис после"></li>
+                <li class="example__item">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/before-desktop@1x.png" width="690" height="517">
+                    <source media="(min-width:768px)" srcset="img/before-tablet@1x.png" width="690" height="517">
+                    <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Борис до">
+                  </picture>
+                </li>
+                <li class="example__item">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/after-desktop@1x.png" width="690" height="517">
+                    <source media="(min-width:1200px)" srcset="img/after-tablet@1x.png" width="690" height="517">
+                    <img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Борис после">
+                  </picture>
+                </li>
               </ul>
               <p class="example__slider-toggles">
                 <button class="example__slider-toggle" type="button">Было</button>

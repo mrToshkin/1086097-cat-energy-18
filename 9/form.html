@@ -12,8 +12,8 @@
     <header class="page-header container2">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width:1280px)" width="150" heigh="50" srcset="img/logo-desktop.svg" alt="Cat">
-          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg" alt="Cat">
+          <source media="(min-width:1200px)" width="150" heigh="50" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
         </picture>
       </a>
@@ -37,6 +37,7 @@
         <p class="programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <form class="programm__form form-programm" action="echo/htmlacademy.ru" method="post">
+
           <fieldset class="form-programm__field form-programm__flex-cat">
             <legend class="visually-hidden">данные вашего кота</legend>
             <p class="form-programm__cat">
@@ -71,6 +72,7 @@
               <label class="form-programm__title2" for="advice">не знаю (нужен ваш совет)</label>
             </p>
           </fieldset>
+
           <fieldset class="form-programm__field">
             <legend class="form-programm__heading">Контактные данные<br> (владельца кота)</legend>
             <div class="form-programm__flex-data">
@@ -84,12 +86,14 @@
               </p>
             </div>
           </fieldset>
+
           <fieldset class="form-programm__field">
             <div class="form-programm_flex-area">
               <legend class="form-programm__heading">Комментарий</legend>
               <textarea class="form-programm__area" name="area" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
+
           <fieldset class="form-programm__field form-programm_flex-add">
             <legend class="form-programm__heading">Дополнительно</legend>
             <p class="form-programm__add">
@@ -113,9 +117,10 @@
               <label class="form-programm__title3" for="vitamins">витамины</label>
             </p>
           </fieldset>
+
           <p class="form-programm__button-flex">
             <input class="button form-programm__button" type="submit" name="submit" value="Отправить заявку">
-            <small class="programm__small-tablet">
+            <small class="form-programm__small-tablet">
               <sup>*</sup>– Обязательные поля
             </small>
           </p>
