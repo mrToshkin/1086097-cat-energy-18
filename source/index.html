@@ -18,7 +18,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -45,8 +45,7 @@
           <source media="(min-width: 768px)" width="708" heigh="608"
           srcset="img/index-can-tablet@1x.jpg" alt="Cat">
           <img class="food-image" src="img/index-can-mobile@1x.png"
-          width="280"
-        height="271" alt="Cat-energy Курица">
+          width="280" height="271" alt="Cat-energy Курица">
         </picture>
         <a class="button food__button" href="#">Подобрать программу</a>
       </section>
@@ -144,9 +143,9 @@
         <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
         <ul class="page-footer__list social-list">
-          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-vk.svg" width="60" height="20" alt="мы в контакте"></a></li>
-          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-insta.svg" width="60" height="20" alt="мы в инстаграм"></a></li>
-          <li class="social-list__item"><a href="#"><img class="social__image" src="img/icon-fb.svg" width="60" height="20" alt="мы в фейсбуке"></a></li>
+          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в контакте" focusable="false" class="page-footer__icon-vk" width="60" height="20"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
+          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в инстаграм" focusable="false" class="page-footer__icon-insta" width="60" height="20"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a></li>
+          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в фейсбук" focusable="false" class="page-footer__icon-fb" width="60" height="20"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
         </ul>
 
         <div class="page-footer__wrapper-academy">
@@ -160,7 +159,7 @@
       var main-nav = document.querySelector(".main-nav");
       var navtoggle = document.querySelector(".main-nav__toggle");
 
-      // mainnav.classList.remove("main-nav--nojs");
+      mainnav.classList.remove("main-nav--nojs");
 
       navtoggle.addEventListener("click", function(evt) {
 
