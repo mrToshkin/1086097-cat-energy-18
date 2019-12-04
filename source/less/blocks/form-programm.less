@@ -339,7 +339,7 @@
   text-transform: uppercase;
 }
 
-.programm__small-tablet {
+.form-programm__small-tablet {
   display: none;
 
   width: 50%;
@@ -425,7 +425,7 @@
     .font-size(20px; 20px);
   }
 
-  .programm__small-tablet {
+  .form-programm__small-tablet {
     display: block;
   }
 
@@ -435,5 +435,100 @@
     justify-content: space-between;
 
     padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-programm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-programm__field {
+    width: 100%;
+  }
+
+  .form-programm__flex-cat {
+    flex-direction: row;
+
+    width: 46.7%;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    box-sizing: border-box;
+  }
+
+  .form-programm__flex-select {
+    width: 46.7%;
+
+    padding: 40px 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+  }
+
+  .form-programm__flex-data {
+    direction: row;
+    justify-content: space-between;
+  }
+
+  .form-programm__data {
+    flex-wrap: wrap;
+
+    width: 46.7%;
+  }
+
+  .form-programm__data .form-programm__title {
+    width: 10%;
+
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .form-programm__input[name="mail"] {
+    width: 85%;
+
+    background-position: right center;
+  }
+
+  .form-programm__input[name="tel"] {
+    width: 81%;
+
+    background-position: right center;
+  }
+
+  .form-programm_flex-add {
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .form-programm__add {
+    width: 20%;
+
+    .mapa();
+  }
+
+  .form-programm__button-flex {
+    justify-content: flex-start;
+
+    padding: 0;
+    margin: 80px 0;
+
+    width: 100%;
+  }
+
+  .form-programm__button {
+    width: 46.7%;
+
+    margin-right: 6.5%;
+  }
+
+  .form-programm__small-tablet {
+    width: 20%;
   }
 }

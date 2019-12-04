@@ -12,7 +12,11 @@
     <header class="page-header container2">
 
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat-energy">
+        <picture>
+          <source media="(min-width:1200px)" width="150" heigh="50" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -35,8 +39,15 @@
           <h2 class="food__heading">Функциональное питание для котов</h2>
           <p class="food__text">Занялся собой? Займись котом!</p>
         </header>
-        <img class="food-image" src="img/index-can-mobile@1x.png" width="280"
+        <picture>
+          <source media="(min-width: 1200px)" width="552" heigh="449"
+          srcset="img/index-can-desktop@1x.png" alt="Cat">
+          <source media="(min-width: 768px)" width="708" heigh="608"
+          srcset="img/index-can-tablet@1x.jpg" alt="Cat">
+          <img class="food-image" src="img/index-can-mobile@1x.png"
+          width="280"
         height="271" alt="Cat-energy Курица">
+        </picture>
         <a class="button food__button" href="#">Подобрать программу</a>
       </section>
 
@@ -90,8 +101,20 @@
             </table>
             <div class="example__wrapper-slider">
               <ul class="example__list">
-                <li class="example__item"><img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Борис до"></li>
-                <li class="example__item"><img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Борис после"></li>
+                <li class="example__item">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/before-desktop@1x.png" width="690" height="517">
+                    <source media="(min-width:768px)" srcset="img/before-tablet@1x.png" width="690" height="517">
+                    <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Борис до">
+                  </picture>
+                </li>
+                <li class="example__item">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/after-desktop@1x.png" width="690" height="517">
+                    <source media="(min-width:1200px)" srcset="img/after-tablet@1x.png" width="690" height="517">
+                    <img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Борис после">
+                  </picture>
+                </li>
               </ul>
               <p class="example__slider-toggles">
                 <button class="example__slider-toggle" type="button">Было</button>
