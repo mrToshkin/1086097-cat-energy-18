@@ -41,11 +41,15 @@
           <p class="food__text">Занялся собой? Займись котом!</p>
         </header>
         <picture>
+          <source type="img-webp" media="(min-width: 1200px)" width="552" heigh="449" srcset="index-can-desktop@1x.webp 1x, index-can-desktop@2x.webp 2x">
+          <source type="img-webp" media="(min-width: 768px)" width="708" heigh="608" srcset="index-can-tablet@1x.webp 1x, index-can-tablet@2x.webp 2x">
+          <source type="img-webp" srcset="index-can-mobile@1x.webp 1x, index-can-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" width="552" heigh="449"
-          srcset="img/index-can-desktop@1x.png" alt="Cat">
+          srcset="img/index-can-desktop@1x.png 1x, index-can-desktop@2x.png 2x" alt="Cat">
           <source media="(min-width: 768px)" width="708" heigh="608"
-          srcset="img/index-can-tablet@1x.jpg" alt="Cat">
-          <img class="food-image" src="img/index-can-mobile@1x.png"
+          srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" alt="Cat">
+          <img class="food-image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x"
           width="280" height="271" alt="Cat-energy Курица">
         </picture>
         <a class="button food__button" href="#">Подобрать программу</a>
@@ -71,10 +75,10 @@
       <section class="howitwork container">
         <h2 class="howitwork__heading">Как это работает</h2>
         <ul class="howitwork__list">
-          <li class="howitwork__item howitwork__number">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="howitwork__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="howitwork__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="howitwork__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="howitwork__item howitwork__leaf">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="howitwork__item howitwork__powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="howitwork__item howitwork__dining">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="howitwork__item howitwork__clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </section>
 
@@ -103,16 +107,26 @@
               <ul class="example__list">
                 <li class="example__item">
                   <picture>
-                    <source media="(min-width:1200px)" srcset="img/before-desktop@1x.png" width="690" height="517">
-                    <source media="(min-width:768px)" srcset="img/before-tablet@1x.png" width="690" height="517">
-                    <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Борис до">
+                    <source type="img-webp" media="(min-width: 1200px)"
+                    srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="img-webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="img-webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                    <source media="(min-width:1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" width="690" height="517">
+                    <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" width="690" height="517">
+                    <img class="example__image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Борис до">
                   </picture>
                 </li>
                 <li class="example__item">
                   <picture>
-                    <source media="(min-width:1200px)" srcset="img/after-desktop@1x.png" width="690" height="517">
-                    <source media="(min-width:1200px)" srcset="img/after-tablet@1x.png" width="690" height="517">
-                    <img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Борис после">
+                    <source type="img-webp" media="(min-width: 1200px)"
+                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="img-webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="img-webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                    <source media="(min-width:1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" width="690" height="517">
+                    <source media="(min-width:1200px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" width="690" height="517">
+                    <img class="example__image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Борис после">
                   </picture>
                 </li>
               </ul>
@@ -144,14 +158,14 @@
         <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
 
         <ul class="page-footer__list social-list">
-          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в контакте" focusable="false" class="page-footer__icon-vk" width="60" height="20"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
-          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в инстаграм" focusable="false" class="page-footer__icon-insta" width="60" height="20"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a></li>
-          <li class="social-list__item"><a href="#"><svg role="img" aria-label="мы в фейсбук" focusable="false" class="page-footer__icon-fb" width="60" height="20"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
+          <li class="social-list__item"><a href="#" aria-label="мы в контакте"><svg role="img" class="page-footer__icon-vk" width="60" height="20"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
+          <li class="social-list__item"><a href="#" aria-label="мы в инстаграм"><svg role="img" class="page-footer__icon-insta" width="60" height="20"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a></li>
+          <li class="social-list__item"><a href="#" aria-label="мы в фейсбук"><svg role="img" class="page-footer__icon-fb" width="60" height="20"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
         </ul>
 
         <div class="page-footer__wrapper-academy">
-          <p class="page-footer__academy">HTML Academy</p>
-          <img src="img/htmlacademy2.svg" width="27" height="34.3" alt="Логотип HTML-academy">
+          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"><p>HTML Academy</p></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"><svg role="img" width="27" height="34.3"><use xlink:href="img/sprite.svg#html-academy"></use></svg></a>
         </div>
       </div>
     </footer>
