@@ -44,12 +44,12 @@
   width: 320px;
 
   background-color: @lightgray;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png 1x");
   background-repeat: no-repeat;
   background-size: 320px 400px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width), (min-resolution: @retina-dppx) {
   .contacts {
     background-color: transparent;
   }
@@ -92,7 +92,7 @@
 
     width: auto;
 
-    background-image: url("../img/bg-map-tablet@1x.png");
+    background-image: url("../img/bg-map-tablet@2x.png");
     background-size: 768px 400px;
     background-position: 50% 0;
   }
@@ -100,7 +100,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts__map {
-    background-image: url("../img/bg-map-desktop@1x.png");
+    background-image: url("../img/bg-map-desktop@2x.png");
     background-size: 1440px 400px;
     background-position: 50% 0;
   }
