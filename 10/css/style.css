@@ -3,7 +3,13 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
 }
 .page-header {
   display: -webkit-box;
@@ -1610,7 +1616,8 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
 }
-@media (min-width: 768px), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+@media (min-width: 768px) {
+  /*, (min-resolution: @retina-dppx)*/
   .addproducts__wrapper-list {
     padding: 0 37px;
     margin: 0 auto;
@@ -1996,13 +2003,14 @@
   padding: 0;
   padding-left: 46px;
 }
-.form-programm__radio-indicator {
+.form-programm__select {
   position: relative;
 }
 .form-programm__radio-indicator::after {
   position: absolute;
   left: -1px;
   top: -1px;
+  z-index: 10;
   content: "";
   width: 30px;
   height: 30px;
@@ -2074,7 +2082,7 @@
   background-position: 100px center;
   background-repeat: no-repeat;
 }
-.form-programm_flex-area {
+.form-programm__flex-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2083,11 +2091,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.form-programm_flex-area .form-programm__heading {
+.form-programm__flex-area .form-programm__heading {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.form-programm_flex-area .form-programm__heading::after {
+.form-programm__flex-area .form-programm__heading::after {
   right: -20px;
   width: 160px;
 }
@@ -2097,32 +2105,20 @@
   padding-left: 10px;
   font-weight: 300;
 }
-.form-programm_flex-add {
+.form-programm__flex-add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.form-programm_flex-add .form-programm__heading {
+.form-programm__flex-add .form-programm__heading {
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.form-programm_flex-add .form-programm__heading::after {
+.form-programm__flex-add .form-programm__heading::after {
   right: -140px;
   width: 135px;
-}
-.form-programm_flex-add2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 .form-programm__add {
   width: 100%;
@@ -2146,8 +2142,8 @@
   height: 30px;
   border: 1px solid #cdcdcd;
 }
-.form-programm__add .form-programm__checkbox-indicator:hover::before {
-  background: red;
+.form-programm__checkbox-indicator:hover::after {
+  border: 1px solid red;
 }
 .form-programm__add input[type="checkbox"]:checked + .form-programm__checkbox-indicator::before {
   position: absolute;
@@ -2225,26 +2221,34 @@
     margin-top: 77px;
     margin-bottom: 77px;
   }
-  .form-programm_flex-add .form-programm__heading,
-  .form-programm_flex-area .form-programm__heading {
+  .form-programm__flex-add .form-programm__heading,
+  .form-programm__flex-area .form-programm__heading {
     margin-top: 77px;
     margin-bottom: 77px;
   }
   .form-programm__heading br {
     display: none;
   }
-  .form-programm_flex-add {
+  .form-programm__flex-add {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    background: lightblue;
   }
   .form-programm__add {
     width: calc(50% - 80px);
     margin-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
+    background-color: yellow;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .programm__small {
     display: none;
@@ -2328,10 +2332,10 @@
     width: 81%;
     background-position: right center;
   }
-  .form-programm_flex-add {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .form-programm__flex-add {
+    width: 100%;
+  }
+  .form-programm__title3 {
     width: 100%;
   }
   .form-programm__add {
@@ -2364,9 +2368,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-}
-* {
-  outline: 1px solid red;
 }
 .container {
   width: 280px;
