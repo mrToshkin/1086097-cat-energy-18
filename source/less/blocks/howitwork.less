@@ -55,7 +55,7 @@
   color: @black;
 }
 
-@media (min-width: @tablet-width) /*(min-resolution: @retina-dppx)*/ {
+@media (min-resolution: @retina-dppx) {
   .howitwork__leaf::before {
     background-image: url("../img/advantage-leaf@2x.png");
   }
@@ -71,7 +71,9 @@
   .howitwork__clock::before {
     background-image: url("../img/advantage-clock@2x.png");
   }
+}
 
+@media (min-width: @tablet-width) {
   .howitwork__heading {
     .mapa();
     margin-bottom: 75px;
