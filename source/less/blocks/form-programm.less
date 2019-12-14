@@ -141,8 +141,8 @@
 }
 
 .form-programm__radio-indicator:hover {
-  &::before {
-    background: red;
+  &::after {
+    border-color: @lightgray;
   }
 }
 
@@ -152,11 +152,15 @@
   }
 }
 
-// .form-programm__select input[type="radio"]:disabled + .form-programm__radio-indicator {
-//     &::before {
-//     background: none;
-//   }
-// }
+.form-programm__select input[type="radio"]:disabled + .form-programm__radio-indicator {
+  &::before {
+    background: @white;
+  }
+
+  &::after {
+    border: 2px solid blue;
+  }
+}
 
 .form-programm__select input[type="radio"]:focus + .form-programm__radio-indicator {
   &::after {

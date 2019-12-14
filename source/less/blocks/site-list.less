@@ -3,27 +3,25 @@
   .mapa-ul();
 }
 
-.site-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .site-list__item {
-  display: relative;
+  position: relative;
   left: 0;
 
   font-size: 20px;
   line-height: 20px;
   text-align: center;
 
-  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid @lightgray2;
 
-  padding: 24px 30px;
+  padding: 23px 30px;
 }
 
-.site-list__item:last-child {
-  border-bottom: 1px solid #f7f7f7;
+.site-list__link {
+  .mapa();
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid @lightgray2;
 }
 
 .main-nav--closed .site-list__item {
@@ -40,35 +38,94 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    align-self: flex-start;
-    width: 500px;
+    width: 100%;
   }
 
   .site-list__item {
-    border-top: none;
+    border-bottom: none;
     .mapa();
     margin-left: 35px;
-    padding-top: 25px;
+    padding-top: 0;
 
     .font-size(18px; 25px);
-    font-weight: 200;
+    font-weight: 300;
+
+    color: @l-black;
+  }
+
+  .site-list__item--active {
+    &::after {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+
+      content: "";
+
+      height: 2px;
+      width: 100%;
+
+      background-color: @green;
+    }
+  }
+
+  .site-list__item:first-child {
+    border-top: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .site-list {
-    width: 610px;
-  }
-
   .site-list__item {
-    margin-left: 40px;
-    padding-top: 85px;
+    margin-left: 35px;
+    padding-top: 72px;
 
     .font-size(20px; 25px);
   }
 
+  .site-list__item--active {
+    &::after {
+      bottom: -10px;
+
+      height: 1px;
+
+      background-color: @white;
+    }
+  }
+
+  .site-list__item-catalog--active {
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+
+      content: "";
+
+      height: 1px;
+      width: 100%;
+
+      background-color: @green;
+    }
+  }
+
   .site-list__link {
+    color: @black;
+  }
+
+  .site-list__link:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
+  }
+
+  .site-list__item-catalog--active .site-list__link:hover {
+    opacity: 1;
+  }
+
+  .site-list__link-index {
     color: @white;
   }
 }

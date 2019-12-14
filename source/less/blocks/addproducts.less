@@ -1,39 +1,44 @@
+.addproducts {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+}
+
 .addproducts__heading {
   position: relative;
   top: 0;
-  left: -20px;
-
 
   .mapa();
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 11%;
+  margin-bottom: 17%;
 
   .font-size(24px; 24px);
-  font-weight: 100;
+  font-weight: 300;
 
   color: @black;
 
   &::after {
     position: absolute;
-    top: 15px;
-    right: -40px;
+    top: 14px;
+    right: -20px;
 
     content: "";
 
-    width: 54px;
-    height: 4px;
+    width: 19%;
+    height: 3px;
 
     background-color: @green;
   }
 
   &::before {
     position: absolute;
-    bottom: -20px;
-    left: 0;
+    bottom: -33px;
+    left: -20px;
 
     content: "";
 
-    width: 320px;
+    width: calc(100% + 40px);
     height: 1px;
 
     background-color: @lightgray2;
@@ -45,17 +50,24 @@
   .mapa-ul();
 }
 
+.addproducts__item {
+  margin-bottom: 7.5%;
+}
+
 .addproducts__field {
   .mapa();
 
   .font-size(16px; 16px);
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 0.2px;
 
   color: @gray;
 }
 
 .addproducts__table {
+  width: 100%;
+
   border-collapse: collapse;
 }
 
@@ -63,19 +75,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  width: 280px;
 }
 
 .addproducts__value,
 .addproducts__cost {
   .mapa();
-  padding: 17px 0;
 
-  font-family: "Arial", sans-serif;
+  padding: 15px 0;
+
+  box-sizing: border-box;
+
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .addproducts__button {
@@ -83,19 +97,19 @@
 
   width: 100%;
 
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 
   text-align: center;
 
   &::after {
     position: absolute;
-    bottom: -20px;
-    left: -20px;
+    bottom: -18px;
+    left: 0;
 
     content: "";
 
-    width: 320px;
     height: 1px;
+    width: 100%;
 
     background-color: @lightgray2;
   }
@@ -103,19 +117,24 @@
 
 .present__box {
   position: relative;
+
   margin: 0 auto;
+  margin-top: 17%;
+  margin-bottom: 13%;
+  padding: 185px 0 43px;
 
-  padding: 190px 0 46px;
-
+  background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 280px 289px;
+  background-position: center top;
 }
 
 .present__text {
   .mapa();
-  padding: 0 60px;
+  padding: 0 55px;
 
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   .font-size(16px; 20px);
   text-align: center;
 
@@ -123,13 +142,13 @@
 
   &::after {
     position: absolute;
-    top: 66px;
-    left: 60px;
+    top: 22%;
+    left: calc(50% - 27.5px);
 
     content: "";
 
-    width: 150px;
-    height: 50px;
+    width: 55px;
+    height: 60px;
 
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
@@ -143,8 +162,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .addproducts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .addproducts__wrapper-list {
-    padding: 0 37px;
     margin: 0 auto;
   }
 
@@ -153,13 +176,15 @@
     top: 0;
     left: 0;
 
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 65px;
+    margin-bottom: 80px;
+    padding-left: 38px;
+    padding-right: 38px;
 
     .font-size(36px; 36px);
 
     &::after {
-      bottom: 15px;
+      top: 22px;
       right: -30px;
 
       width: 328px;
@@ -170,7 +195,7 @@
 
     &::before {
       position: absolute;
-      bottom: 15px;
+      top: 22px;
       left: -30px;
 
       width: 30px;
@@ -187,11 +212,18 @@
   .addproducts__item {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    margin-bottom: -1px;
+
+    border: 1px solid @lightgray2;
   }
 
   .addproducts__field {
-    width: 45%;
+    width: 100%;
 
     padding: 17px 0;
 
@@ -200,9 +232,10 @@
 
   .addproducts__value,
   .addproducts__cost {
-    padding: 17px 0;
+    padding: 20px 0 16px;
 
     .font-size(16px; 20px);
+    letter-spacing: 0.1px;
     text-align: right;
   }
 
@@ -211,13 +244,16 @@
   }
 
   .addproducts__cost {
-    width: 50%;
+    width: 20%;
+
+    margin-left: 28px;
+    letter-spacing: 0.2px;
   }
 
   .addproducts__table {
     display: block;
 
-    margin-bottom: 25px;
+    margin-bottom: 7px;
   }
 
   .addproducts__table-wrapper {
@@ -230,38 +266,33 @@
   }
 
   .addproducts__tr {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 50%;
   }
 
-  .addproducts__button {
+  .addproducts .addproducts__button {
     position: relative;
 
-    width: 584px;
-    padding: 0;
-
-    margin-bottom: 35px;
+    width: 100%;
+    padding: 10.5px 0;
 
     text-align: center;
 
     &::after {
-      bottom: -20px;
-      left: 0;
-
-      width: 708px;
-      height: 1px;
+      display: none;
     }
   }
 
   .present__box {
-    margin-top: 0;
+    margin-top: 70px;
+    margin-bottom: 77px;
 
-    padding: 80px 0 46px;
+    padding: 74px 0 66px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 708px 200px;
   }
 
   .present__text {
@@ -276,7 +307,7 @@
     &::after {
       position: absolute;
       top: 66px;
-      left: 60px;
+      left: 90px;
 
       width: 150px;
       height: 100px;
@@ -304,53 +335,65 @@
   }
 
   .addproducts__heading {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 65px;
+    margin-bottom: 80px;
+    padding-left: 0;
 
     width: 100%;
+    box-sizing: border-box;
 
     &::after {
       bottom: 15px;
-      right: -70px;
+      right: 0;
 
-      width: 956px;
+      width: 840px;
       height: 3px;
 
       background-color: @green;
+    }
+
+    &::before {
+      left: 0;
+
+      width: 30px;
     }
   }
 
   .addproducts__list {
     margin: 0;
+    padding: 0;
+
+    width: 73.3%;
   }
 
   .addproducts__item {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
 
     position: relative;
 
     width: 100%;
 
-    margin-bottom: 8px;
+    border: none;
+    border-top: 1px solid @lightgray2;
+
+    .mapa();
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &::after {
-      position: absolute;
-      bottom: 11px;
+      display: none;
+    }
 
-      content: "";
-
-      width: 100%;
-      height: 1px;
-
-      background-color: @lightgray2;
+    &:last-child {
+      border-bottom: 1px solid @lightgray2;
     }
   }
 
   .addproducts__table {
-    width: 68%;
+    width: 68.2%;
+
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .addproducts__table-wrapper {
@@ -358,6 +401,8 @@
     flex-wrap: wrap;
 
     width: 100%;
+
+    margin-top: 1.65%;
   }
 
   .addproducts__tr {
@@ -365,24 +410,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 50%;
+    width: 47%;
+
+    padding: 0;
+  }
+
+  .addproducts__tr:first-child {
+    width: 53%;
   }
 
   .addproducts__field {
     width: 100%;
 
-    padding: 17px 0;
+    padding: 0;
   }
 
-  .addproducts__value,
   .addproducts__cost {
-    width: 50%;
+    width: 40%;
+
+    padding: 0;
+    padding-top: 3px;
   }
 
-  .addproducts__button {
-    width: 27%;
+  .addproducts__value {
+    width: 48%;
+    padding: 0;
 
-    margin-bottom: 25px;
+    padding-top: 3px;
+
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .addproducts .addproducts__button {
+    width: 27.3%;
+
+    margin-bottom: 0;
 
     box-sizing: border-box;
 
@@ -395,10 +458,12 @@
     width: 20%;
 
     margin: 0;
+    margin-bottom: 85px;
+    padding: 87px 40px 42px;
 
     box-sizing: border-box;
 
-    background-image: url("../img/gift-photo-desktop@2x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 245px 289px;
   }
@@ -411,8 +476,8 @@
     text-align: center;
 
     &::after {
-      top: 20px;
-      left: 50px;
+      top: 22.5%;
+      left: calc(50% - 30px);
 
       width: 150px;
       height: 100px;

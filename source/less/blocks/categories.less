@@ -1,3 +1,8 @@
+.categories {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
 .mass-list,
 .mass-list__item {
   .mapa-ul();
@@ -5,21 +10,27 @@
 
 .categories__list {
   margin-top: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .mass-list__item {
-  padding: 35px 22px 22px;
+  padding: 30px 21px 18px;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   background-color: @lightgray;
+}
+
+.mass-list__item:last-child {
+  margin-bottom: 27px;
 }
 
 .mass-list__heading {
   position: relative;
 
   .mapa();
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-left: 70px;
 
   font-size: 24px;
@@ -49,7 +60,7 @@
 .mass-list__heading::after {
   position: absolute;
   left: 8px;
-  top: -7px;
+  top: -8px;
 
   content: "";
 
@@ -62,8 +73,8 @@
 
 .mass-list__item:nth-child(2) .mass-list__heading::after {
   position: absolute;
-  left: -10px;
-  top: 6px;
+  left: -8px;
+  top: 5px;
 
   content: "";
 
@@ -75,36 +86,27 @@
 }
 
 .mass-list__text {
-  position: relative;
+  padding-bottom: 21px;
+  margin-bottom: 20px;
 
-  margin-bottom: 50px;
+  font-family: "Arial", "Tahoma", sans-serif;
 
-  font-family: "Arial", sans-serif;
-}
-
-.mass-list__text::after {
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-
-  content: "";
-
-  width: 100%;
-  height: 1px;
-
-  background-color: @gray;
-  opacity: 0.2;
+  border-bottom: 1px solid @lightgray2;
 }
 
 .mass-list__button {
   position: relative;
 
+  .mapa();
+  padding-right: 35px;
+
   .font-size(16px; 16px);
+  letter-spacing: -0.5px;
 }
 
 .mass-list__button::after {
   position: absolute;
-  right: -40px;
+  right: 0;
   top: 7px;
   content: "";
 
@@ -116,56 +118,84 @@
 }
 
 @media (min-width: @tablet-width) {
-  .mass-list__text {
-    width: 330px;
-
-    margin-bottom: 65px;
-
-    .font-size(16px; 24px);
+  .categories__list {
+    .mapa();
   }
 
-  .mass-list__text::after {
-    display: none;
+  .mass-list__text {
+    width: 63%;
+
+    margin-bottom: 35px;
+
+    .font-size(16px; 24px);
+
+    border-bottom: none;
+  }
+
+  .mass-list__item:last-child {
+    margin-bottom: 45px;
+  }
+
+  .mass-list__item:nth-child(2) .mass-list__text {
+    width: 57%;
   }
 
   .mass-list__heading {
     position: relative;
 
     padding-left: 0;
+    margin-bottom: 27px;
 
     .font-size(36px; 37px);
   }
 
   .mass-list__item {
-    padding: 74px 50px 64px;
+    padding: 76px 52px 58px;
+    margin-bottom: 30px;
   }
 
   .mass-list__heading::before {
-    left: 390px;
+    left: 395px;
+    top: 18px;
 
     width: 200px;
     height: 200px;
   }
 
   .mass-list__heading::after {
-    left: 430px;
+    left: 424px;
+    top: 4px;
 
     width: 146px;
     height: 195px;
   }
 
   .mass-list__item:nth-child(2) .mass-list__heading::after {
-    left: 350px;
-    top: 30px;
+    left: 362px;
+    top: 62px;
 
-    width: 270px;
-    height: 107px;
+    width: 279px;
+    height: 108px;
+  }
+
+  .mass-list__button {
+    padding-right: 49px;
+
+    .font-size(20px; 20px);
+
+    &::after {
+      top: 8px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .categories {
+    max-width: @desktop-width;
+  }
+
   .categories__list {
-    margin-top: 170px;
+    margin-top: 133px;
   }
 
   .mass-list__button {
@@ -175,36 +205,53 @@
   .mass-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .mass-list__item:last-child {
+    margin-bottom: 20px;
   }
 
   .mass-list__item {
     width: 46.7%;
 
+    margin-bottom: 20px;
+
     box-sizing: border-box;
   }
 
+  .mass-list__text,
+  .mass-list__item:nth-child(2) .mass-list__text {
+    width: 100%;
+
+    padding-bottom: 0;
+    margin-bottom: 32px;
+  }
+
   .mass-list__heading {
-    margin-bottom: 80px;
-    margin-left: 160px;
+    margin-bottom: 75px;
+    margin-left: 162px;
   }
 
   .mass-list__heading::before {
     left: -160px;
+    top: -30px;
 
     width: 100px;
     height: 100px;
   }
 
   .mass-list__heading::after {
-    left: -160px;
+    left: -146px;
+    top: -35px;
 
     width: 74px;
     height: 96px;
   }
 
   .mass-list__item:nth-child(2) .mass-list__heading::after {
-    left: -170px;
-    top: 10px;
+    left: -180px;
+    top: -8px;
 
     width: 137px;
     height: 58px;

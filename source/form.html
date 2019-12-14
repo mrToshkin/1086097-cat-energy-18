@@ -8,21 +8,22 @@
   </head>
 
   <body>
-    <header class="page-header container2">
+    <header class="page-header container">
+
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width:1200px)" width="150" heigh="50" srcset="img/logo-desktop.svg">
-          <source media="(min-width:768px)" width="150" heigh="50" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="50" alt="Cat">
+          <source media="(min-width:1200px)" width="210" heigh="66" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" width="173" heigh="58" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="35" alt="Cat">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav-list site-list">
-            <li class="site-list__item site-list__item--active"><a href="index.html">главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">каталог продукции</a></li>
-            <li class="site-list__item"><a>подбор программы</a></li>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link">подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -56,17 +57,17 @@
           <fieldset class="form-programm__field form-programm__flex-select">
             <legend class="visually-hidden">программы</legend>
             <p class="form-programm__select">
-              <label class="form-programm__title2" for="thin"><input class="visually-hidden" type="radio" id="thin" name="thin" checked="">
+              <label class="form-programm__title2" for="thin"><input class="visually-hidden" type="radio" id="thin" name="select" checked="">
               <span class="form-programm__radio-indicator"></span>
               похудение</label>
             </p>
             <p class="form-programm__select">
-              <label class="form-programm__title2" for="big"><input class="visually-hidden" type="radio" id="big" name="big">
+              <label class="form-programm__title2" for="big"><input class="visually-hidden" type="radio" id="big" name="select">
               <span class="form-programm__radio-indicator"></span>
               набор массы</label>
             </p>
             <p class="form-programm__select">
-              <label class="form-programm__title2" for="advice"><input class="visually-hidden" type="radio" id="advice" name="advice">
+              <label class="form-programm__title2" for="advice"><input class="visually-hidden" type="radio" id="advice" name="select">
               <span class="form-programm__radio-indicator"></span>
               не знаю (нужен ваш совет)</label>
             </p>
@@ -141,18 +142,20 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container page-footer__wrapper">
-        <img class="page-footer__logo" src="img/logo-footer.svg" width="150" height="50" alt="Cat energy">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <img class="page-footer__logo" src="img/logo-footer.svg" width="130" height="40" alt="Cat energy">
 
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item"><a href="#" aria-label="мы в контакте"><svg role="img" class="page-footer__icon-vk" width="60" height="20"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
-          <li class="social-list__item"><a href="#" aria-label="мы в инстаграм"><svg role="img" class="page-footer__icon-insta" width="60" height="20"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a></li>
-          <li class="social-list__item"><a href="#" aria-label="мы в фейсбук"><svg role="img" class="page-footer__icon-fb" width="60" height="20"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
-        </ul>
+          <ul class="page-footer__list social-list">
+            <li class="social-list__item"><a href="#" aria-label="мы в контакте"><svg role="img" class="page-footer__icon-vk" width="60" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg></a></li>
+            <li class="social-list__item"><a href="#" aria-label="мы в инстаграм"><svg role="img" class="page-footer__icon-insta" width="16" height="16"><use xlink:href="img/sprite.svg#icon-insta"></use></svg></a></li>
+            <li class="c"><a href="#" aria-label="мы в фейсбук"><svg role="img" class="page-footer__icon-fb" width="60" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a></li>
+          </ul>
 
-        <div class="page-footer__wrapper-academy">
-          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"><p>HTML Academy</p></a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип html-academy"><svg role="img" width="27" height="34.3"><use xlink:href="img/sprite.svg#html-academy"></use></svg></a>
+          <div class="page-footer__wrapper-academy">
+            <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"><p>HTML Academy</p></a>
+            <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип html-academy"><svg role="img" width="27" height="34.3"><use xlink:href="img/sprite.svg#html-academy"></use></svg></a>
+          </div>
         </div>
       </div>
     </footer>
