@@ -1,20 +1,29 @@
+.programm {
+  max-width: @mobile-width-only;
+
+  margin: 0 auto;
+}
+
 .programm__heading {
   .mapa();
-  margin-top: 20px;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 100;
+  .font-size(36px; 60px);
+  font-weight: 300;
 
   color: @black;
 }
 
 .programm__text {
   .mapa();
-  padding: 30px 0 36px;
+  padding: 24px 0 11%;
+  padding-left: 20px;
+  padding-right: 50px;
 
   .font-size(14px; 18px);
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
 
   color: @gray;
@@ -24,7 +33,7 @@
   .mapa();
 
   .font-size(16px; 18px);
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
 
   color: @l-black;
@@ -32,14 +41,23 @@
 
 
 @media (min-width: @tablet-width) {
+  .programm {
+    max-width: 100%;
+
+    margin-bottom: 72px;
+  }
+
   .programm__heading {
-    margin-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 55px;
 
     font-size: 60px;
   }
 
   .programm__text {
-    padding: 55px 310px 50px 40px;
+    padding: 55px 310px 50px 42px;
+    margin-bottom: 16px;
 
     .font-size(20px; 30px);
   }
@@ -50,7 +68,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .programm__heading {
+    margin-top: 68px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .programm__text {
     width: 29.6%;
+
+    padding: 55px 310px 50px 0;
+    margin-bottom: 16px;
+
+    .font-size(20px; 30px);
   }
 }
