@@ -2432,13 +2432,17 @@
 .form-programm__title {
   margin: 0;
   padding: 0;
-  padding-right: 6.5%;
+  padding-right: 7%;
   padding-top: 4%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .form-programm__title[for="age"] {
   padding-top: 6%;
+}
+.form-programm__star {
+  margin: 0;
+  padding: 0;
 }
 .form-programm__flex-cat {
   display: -webkit-box;
@@ -2449,6 +2453,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 3.5%;
@@ -2660,6 +2667,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 8.5%;
 }
 .form-programm__wrapper-add {
@@ -2677,6 +2687,8 @@
 .form-programm__add {
   position: relative;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   margin-bottom: 8%;
@@ -2788,10 +2800,6 @@
     margin-bottom: 2.8%;
   }
   .form-programm__flex-cat {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding-left: 42px;
     padding-right: 37px;
   }
@@ -2977,8 +2985,6 @@
   .form-programm__add {
     width: 45.5%;
     margin-bottom: 47px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .form-programm__title3 {
     padding-top: 6px;
@@ -3042,10 +3048,6 @@
     width: 100%;
   }
   .form-programm__flex-cat {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     width: 46.7%;
     padding-left: 0;
     padding-right: 0;
@@ -3155,7 +3157,6 @@
     padding-left: 18px;
   }
   .form-programm__flex-add {
-    width: 100%;
     margin-top: 40px;
   }
   .form-programm__flex-add::after {
@@ -3192,8 +3193,6 @@
     width: 20%;
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .form-programm__button-flex {
     -webkit-box-pack: start;
