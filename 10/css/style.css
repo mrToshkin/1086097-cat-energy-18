@@ -2332,7 +2332,7 @@
 .programm__text {
   margin: 0;
   padding: 0;
-  padding: 24px 0 11%;
+  padding: 25px 0 11.7%;
   padding-left: 20px;
   padding-right: 50px;
   font-size: 14px;
@@ -2373,6 +2373,9 @@
   }
 }
 @media (min-width: 1240px) {
+  .programm {
+    max-width: 1300px;
+  }
   .programm__heading {
     margin-top: 68px;
     padding-left: 0;
@@ -2437,9 +2440,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.form-programm__title[for="age"] {
-  padding-top: 6%;
-}
 .form-programm__star {
   margin: 0;
   padding: 0;
@@ -2456,6 +2456,9 @@
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 3.5%;
@@ -2492,7 +2495,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding: 1.8% 0 2.7%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 6% 0 2%;
   margin-bottom: 8.5%;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
@@ -2509,7 +2515,7 @@
   margin: 0;
   padding: 0;
   padding-left: 46px;
-  padding-top: 1.4%;
+  padding-top: 1.7%;
 }
 .form-programm__radio-indicator {
   -webkit-transition: all 0.7s ease-in-out;
@@ -2597,7 +2603,7 @@
   right: 0;
   content: "";
   width: 31%;
-  height: 4px;
+  height: 3px;
   background-color: #68b738;
 }
 .form-programm__flex-data {
@@ -2607,6 +2613,9 @@
   direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -2614,14 +2623,14 @@
   width: 100%;
   background-image: url("../img/icon-mail.svg");
   background-size: 17px 13px;
-  background-position: 95% 55%;
+  background-position: 94% 55%;
   background-repeat: no-repeat;
 }
 .form-programm__input[name="tel"] {
   width: 100%;
   background-image: url("../img/icon-phone.svg");
   background-size: 20px 20px;
-  background-position: 95% 55%;
+  background-position: 94% 55%;
   background-repeat: no-repeat;
 }
 .form-programm__flex-area {
@@ -2638,11 +2647,11 @@
 }
 .form-programm__field-area::after {
   position: absolute;
-  top: 11%;
+  top: 13%;
   right: 0;
   content: "";
   width: 49%;
-  height: 4px;
+  height: 3px;
   background-color: #68b738;
 }
 .form-programm__flex-area .form-programm__heading {
@@ -2662,6 +2671,7 @@
   width: 100%;
 }
 .form-programm__flex-add {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2672,7 +2682,19 @@
           box-sizing: border-box;
   margin-top: 8.5%;
 }
+.form-programm__flex-add::after {
+  position: absolute;
+  top: 6%;
+  right: 0;
+  content: "";
+  width: 42%;
+  height: 3px;
+  background-color: #68b738;
+}
 .form-programm__wrapper-add {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -2807,10 +2829,10 @@
     padding-top: 2.5%;
   }
   .form-programm__flex-select {
-    padding: 0.5% 0.5% 1.5%;
+    padding: 3.5% 0.5% 1.5%;
     margin-left: 42px;
     margin-right: 37px;
-    margin-top: 55px;
+    margin-top: 29px;
     border-top: 0;
     border-bottom: 0;
     border: 1px solid #f2f2f2;
@@ -3046,12 +3068,21 @@
   }
   .form-programm__field {
     width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form-programm__field-cat {
+    width: 46.7%;
   }
   .form-programm__flex-cat {
-    width: 46.7%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -3061,6 +3092,9 @@
   .form-programm__cat:last-child {
     margin-bottom: 0;
   }
+  .form-programm__field-select {
+    width: 46.7%;
+  }
   .form-programm__flex-select {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3069,8 +3103,10 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 46.7%;
-    padding: 0.5% 0.5% 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 4.2% 0.5% 1.8%;
     padding-left: 3px;
     padding-right: 40px;
     margin: 0;
@@ -3079,6 +3115,7 @@
   }
   .form-programm__select {
     margin-bottom: 4.8%;
+    width: 100%;
   }
   .form-programm__heading {
     padding-left: 0;
@@ -3090,15 +3127,28 @@
     margin-top: 55px;
   }
   .form-programm__field-data::after {
-    top: 19%;
-    right: -10px;
-    width: 58%;
-    height: 3px;
+    display: none;
   }
   .form-programm__field-data::before {
+    display: none;
+  }
+  .form-programm__field-data .form-programm__heading {
+    position: relative;
+    width: 100%;
+  }
+  .form-programm__field-data .form-programm__heading::after {
     position: absolute;
-    top: 19%;
-    left: -10px;
+    top: 73%;
+    right: -15px;
+    content: "";
+    width: 56%;
+    height: 3px;
+    background-color: #68b738;
+  }
+  .form-programm__field-data .form-programm__heading::before {
+    position: absolute;
+    top: 73%;
+    left: -15px;
     width: 35px;
     height: 3px;
     content: "";
@@ -3160,22 +3210,34 @@
     margin-top: 40px;
   }
   .form-programm__flex-add::after {
-    top: 32%;
-    right: -10px;
-    width: 80%;
+    display: none;
   }
   .form-programm__flex-add::before {
-    top: 32%;
-    left: -10px;
-    width: 35px;
+    display: none;
   }
   .form-programm__flex-add .form-programm__heading {
+    position: relative;
+    width: 100%;
     padding-top: 26px;
     margin-bottom: 5%;
   }
   .form-programm__flex-add .form-programm__heading::after {
-    right: -140px;
-    width: 135px;
+    position: absolute;
+    top: 80%;
+    right: -15px;
+    content: "";
+    width: 81%;
+    height: 3px;
+    background-color: #68b738;
+  }
+  .form-programm__flex-add .form-programm__heading::before {
+    position: absolute;
+    top: 80%;
+    left: -15px;
+    content: "";
+    width: 5%;
+    height: 3px;
+    background-color: #68b738;
   }
   .form-programm__wrapper-add {
     padding-left: 0;
@@ -3183,6 +3245,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .form-programm__title3 {
     width: 100%;
