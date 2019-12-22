@@ -17,6 +17,14 @@
   margin-bottom: 11%;
 }
 
+.page-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active {
+  opacity: 0.6;
+}
+
 .social-list {
   position: relative;
 
@@ -31,12 +39,33 @@
   border-bottom: 1px solid @lightgray2;
 }
 
+.social-list__item:hover .page-footer__icon-vk,
+.social-list__item:hover .page-footer__icon-fb,
+.social-list__item:hover .page-footer__icon-insta {
+    color: @green;
+}
+
+.social-list__item:active .page-footer__icon-vk,
+.social-list__item:active .page-footer__icon-fb,
+.social-list__item:active .page-footer__icon-insta {
+    color: @green;
+    opacity: 0.6;
+}
+
 .page-footer__wrapper-academy {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin: 14px 0;
+}
+
+.page-footer__wrapper-academy:hover .page-footer__academy-sign {
+  color: @green;
+}
+
+.page-footer__wrapper-academy:active {
+  opacity: 0.3;
 }
 
 .page-footer__academy {
@@ -143,16 +172,26 @@
   }
 
   .page-footer__wrapper {
-    padding: 55px 0 50px;
+    padding: 60px 0 50px;
   }
 
   .social-list {
     position: relative;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
-    width: 15%;
+    width: 10%;
 
     margin-left: 22px;
+  }
+
+  .page-footer__icon-fb {
+    width: 15px;
+    height: 30px;
+  }
+
+  .page-footer__icon-vk {
+    width: 30px;
+    height: 17px;
   }
 }
