@@ -69,6 +69,10 @@
             justify-content: space-between;
     position: relative;
   }
+  .page-header__logo-image {
+    width: 173px;
+    height: auto;
+  }
   .page-header__logo {
     display: block;
     width: 25%;
@@ -94,6 +98,7 @@
   }
   .page-header__logo-image {
     width: 203px;
+    height: auto;
   }
   .main-nav {
     position: relative;
@@ -292,13 +297,14 @@
   .food-image {
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 708px;
     height: auto;
     margin-top: -50px;
   }
   .food__button {
     position: absolute;
     top: 30%;
+    left: 0;
     z-index: 10;
     margin-left: 90px;
     margin-top: 23px;
@@ -346,7 +352,7 @@
   .food-image {
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 552px;
     height: auto;
     margin-top: 27px;
   }
@@ -1026,7 +1032,7 @@
   }
   .example__image {
     width: 690px;
-    height: 517px;
+    height: auto;
     margin: 0 auto;
   }
   .example__list {
@@ -1105,6 +1111,7 @@
 }
 @media (min-width: 1240px) {
   .example {
+    width: 100%;
     margin-top: 0;
     padding-bottom: 64px;
   }
@@ -1123,6 +1130,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-height: 100px;
+    background-color: lime;
   }
   .example__wrapper {
     display: -webkit-box;
@@ -1134,18 +1142,25 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
+    background-color: yellow;
+    width: 100%;
   }
   .example__table {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     position: relative;
+    left: 0;
     width: 30%;
     padding-right: 16.4%;
     padding-bottom: 0;
     margin-top: -160px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    background-color: red;
+  }
+  .example__tablewrapper {
+    max-width: 100%;
   }
   .example__tr {
     width: 100%;
@@ -1161,39 +1176,6 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #f2f2f2;
-  }
-  .example__wrapper-slider {
-    z-index: 5;
-    width: 53%;
-    margin-top: -120px;
-    padding: 0;
-  }
-  .example__list {
-    margin: 0;
-    padding: 0;
-    padding-top: 0;
-  }
-  .example__item {
-    top: 0;
-    left: 5%;
-  }
-  .example__background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    min-height: 456px;
-    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #f2f2f2), color-stop(75%, #eaeaea), to(#eaeaea));
-    background: linear-gradient(to right, #f2f2f2 75%, #eaeaea 75%, #eaeaea);
-    background-position: center center;
-  }
-  .example__image {
-    width: 620px;
-    height: 500px;
-  }
-  .example__tablewrapper {
-    width: 100%;
   }
   .example__tr:nth-child(1) {
     display: -webkit-box;
@@ -1241,12 +1223,44 @@
   .example__result-sp {
     padding: 0 30px;
   }
+  .example__wrapper-slider {
+    z-index: 5;
+    width: 53%;
+    margin-top: -120px;
+    padding: 0;
+  }
+  .example__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    background-color: lightblue;
+  }
+  .example__item {
+    top: 0;
+    left: 5%;
+  }
+  .example__background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 456px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #f2f2f2), color-stop(75%, #eaeaea), to(#eaeaea));
+    background: linear-gradient(to right, #f2f2f2 75%, #eaeaea 75%, #eaeaea);
+    background-position: center center;
+  }
+  .example__image {
+    width: 690px;
+    height: auto;
+  }
   .example__slider-toggles {
     position: relative;
     width: 88%;
     padding: 0;
     margin-top: 35px;
     float: right;
+    background-color: blue;
   }
   .example__slider-toggle {
     top: 0;
@@ -1732,7 +1746,7 @@
     padding-right: 0;
   }
   .products__item-image {
-    width: 100%;
+    width: 324px;
     height: auto;
     margin-top: -47px;
   }
@@ -1865,6 +1879,10 @@
   .catalog-main__heading {
     padding-bottom: 167px;
     margin-top: 68px;
+  }
+  .products__item-image {
+    width: 245px;
+    height: auto;
   }
   .products {
     width: 100%;
@@ -3288,10 +3306,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: #111111;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 .visually-hidden {
   position: absolute;
