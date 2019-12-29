@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
@@ -22,11 +27,12 @@
       <symbol id="icon-fb" viewBox="61.84 0 26.32 50" fill="CurrentColor">
         <path d="M80.53,50H67.1V26.84h-5.26V15.26h5c-0.26-5.26,0.53-8.95,2.9-11.58C71.84,1.32,75,0.26,78.95,0h9.21v11.05h-7.37  c-0.26,0.53-0.53,2.1-0.53,4.21h7.9v11.58h-7.63L80.53,50L80.53,50z M70,47.37h7.37V23.95H85v-6.05h-7.63v-1.31  c0-3.69,0-6.84,1.84-8.16l0.26-0.26H85V2.63h-6.05c-3.16,0.26-5.26,1.05-6.84,2.63C70,7.37,69.47,11.32,70,16.32l0.26,1.58h-5.53  v6.05H70V47.37z" fill="CurrentColor"/>
       </symbol>
-      <symbol id="html-academy" viewBox="58.583 4.167 32.833 41.667" fill="CurrentColor">
-        <path d="M75.167,4.167H75l-16.417,1.75v30.167L75,45.834l16.416-9.75V5.917L75.167,4.167z M89.334,34.834L75,43.334 l-14.333-8.5V22.5l14.25,8.5v1.5l-9.75-5.834v1.5L75,34.084v1.582l-9.833-5.832v1.5L75,37.166l9.916-5.916v-6.333l4.418-2.667
-        V34.834z M89.25,20.667L85.334,23L83.5,24.083L74.917,19v1.5l7.333,4.417h-0.084L82,25l-1.084,0.584L74.833,22v1.5l4.833,2.834
-        l-1.166,0.75l-3.583-2.167v1.5l2.417,1.418l-2.417,1.416L60.75,20.833l14.167-8.5L89.25,20.667z M89.334,19.167l-14.417-8.5
-        l-14.25,8.5V7.833L75,6.333l14.334,1.5V19.167z"/>
+      <symbol id="html-academy" viewBox="0 0 32.833 41.667" fill="CurrentColor">
+        <path d="M16.583,0.001h-0.166L0,1.751v30.167l16.418,9.75l16.416-9.75V1.751L16.583,0.001z M30.751,30.667
+        l-14.334,8.5l-14.334-8.5V18.333l14.25,8.5v1.5L6.583,22.5V24l9.834,5.918V31.5l-9.834-5.832v1.5L16.417,33l9.916-5.916v-6.332
+        l4.418-2.668V30.667z M30.667,16.501l-3.916,2.333l-1.834,1.084l-8.584-5.083v1.5l7.334,4.417h-0.084l-0.166,0.082l-1.084,0.584
+        l-6.084-3.584v1.5l4.834,2.834l-1.166,0.75l-3.584-2.166v1.5l2.418,1.418l-2.418,1.416L2.167,16.667l14.166-8.5L30.667,16.501z
+        M30.751,15.001l-14.418-8.5l-14.25,8.5V3.667l14.334-1.5l14.334,1.5V15.001z"/>
       </symbol>
     </svg>
 
@@ -36,7 +42,7 @@
         <picture>
           <source media="(min-width:1200px)" srcset="img/logo-desktop.svg">
           <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="35" alt="Cat">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -73,7 +79,7 @@
                   <input class="form-programm__input" type="text" id="weight" name="weight" value="7">
                 </li>
                 <li class="form-programm__cat">
-                  <label class="form-programm__title" for="age">возраст (лет):</label>
+                  <label class="form-programm__title" for="age">возраст (лет):<sup class="form-programm__star"></sup></label>
                   <input class="form-programm__input" type="text" id="age" name="age" value="7">
                 </li>
               </ul>
