@@ -9,12 +9,12 @@
 
 .page-footer__logo {
   display: block;
-  margin: 0 auto;
 
   text-align: center;
 
-  padding-top: 14%;
-  margin-bottom: 11%;
+  padding-top: 11.5%;
+  margin: 0 auto;
+  margin-bottom: 8.7%;
 }
 
 .page-footer__logo:hover {
@@ -29,11 +29,11 @@
   position: relative;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   .mapa-ul();
-  padding: 24px 17% 17px;
+  padding: 20px 29% 17px;
 
   border-top: 1px solid @lightgray2;
   border-bottom: 1px solid @lightgray2;
@@ -42,14 +42,14 @@
 .social-list__item:hover .page-footer__icon-vk,
 .social-list__item:hover .page-footer__icon-fb,
 .social-list__item:hover .page-footer__icon-insta {
-    color: @green;
+  color: @green;
 }
 
 .social-list__item:active .page-footer__icon-vk,
 .social-list__item:active .page-footer__icon-fb,
 .social-list__item:active .page-footer__icon-insta {
-    color: @green;
-    opacity: 0.6;
+  color: @green;
+  opacity: 0.6;
 }
 
 .page-footer__wrapper-academy {
@@ -92,17 +92,19 @@
     justify-content: space-between;
 
     .mapa();
-    margin: 0 auto;
+
     padding: 52px 0;
   }
 
   .page-footer__logo {
     .mapa();
+
+    padding-top: 5px;
   }
 
   .page-footer__icon-vk {
-    width: auto;
-    height: 16px;
+    width: 30px;
+    height: 17px;
 
     color: @footer;
   }
@@ -115,8 +117,8 @@
   }
 
   .page-footer__icon-fb {
-    width: 70px;
-    height: 29px;
+    width: 15px;
+    height: 30px;
 
     padding: 0;
 
@@ -127,12 +129,13 @@
     position: relative;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 28%;
+    width: 17.5%;
 
     .mapa-ul();
+    margin-left: 17px;
 
     border-bottom: 0;
     border-top: 0;
@@ -147,7 +150,6 @@
   .page-footer__academy-logo {
     color: @footer;
   }
-
 
   .page-footer__wrapper-academy {
     display: flex;
@@ -164,15 +166,24 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    max-width: @desktop-width;
+    padding: 0;
 
     background-color: @lightgray;
+  }
 
-    padding: 0;
+  .page-footer__logo {
+    display: block;
+
+    text-align: left;
+
+    width: 128px;
+    height: 25px;
   }
 
   .page-footer__wrapper {
     padding: 60px 0 50px;
+
+    justify-content: space-between;
   }
 
   .social-list {
@@ -180,9 +191,15 @@
 
     justify-content: space-between;
 
-    width: 10%;
+    width: 115px;
 
     margin-left: 22px;
+  }
+
+
+  .page-footer__icon-insta {
+    width: 23px;
+    height: 23px;
   }
 
   .page-footer__icon-fb {
@@ -193,5 +210,9 @@
   .page-footer__icon-vk {
     width: 30px;
     height: 17px;
+  }
+
+  .page-footer__wrapper-academy {
+    width: 13.7%;
   }
 }

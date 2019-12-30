@@ -53,6 +53,8 @@
 }
 
 .example__digit {
+  display: inline-block;
+
   width: 44%;
 
   .mapa();
@@ -69,6 +71,8 @@
 }
 
 .example__value {
+  display: inline-block;
+
   width: 34%;
   box-sizing: border-box;
 
@@ -115,6 +119,13 @@
   text-align: center;
 }
 
+.example__image {
+  position: relative;
+  left: -20px;
+
+  width: 300px;
+}
+
 .example__image-none {
   display: none;
 }
@@ -125,10 +136,12 @@
   display: flex;
   justify-content: space-between;
 
-  width: 71.2%;
+  width: 73%;
 
   .mapa();
-  margin: 21% auto 0;
+  margin: 10% auto 5%;
+
+  box-sizing: border-box;
 }
 
 .example__slider-toggle {
@@ -147,10 +160,10 @@
 
 .example__slider-indicator {
   position: absolute;
-  left: calc(50% - 14%);
+  left: calc(50% - 20%);
   bottom: 3px;
 
-  width: 29%;
+  width: 40%;
 
   .mapa();
   padding: 6px 0;
@@ -230,11 +243,15 @@
   }
 
   .example__digit {
+    display: inline-block;
+
     .font-size(30px; 37px);
     padding: 16px 0 18px;
   }
 
   .example__value {
+    display: inline-block;
+
     width: 39.5%;
 
     padding: 5px 0;
@@ -320,6 +337,8 @@
   }
 
   .example__slider-toggles {
+    justify-content: flex-start;
+
     width: auto;
 
     padding: 0 70px;
@@ -330,6 +349,10 @@
     margin: 1.5% auto 0;
   }
 
+  .example__slider-toggle-1 {
+    margin-right: auto;
+  }
+
   .example__slider-toggle {
     .font-size(20px; 20px);
 
@@ -337,6 +360,14 @@
     padding-top: 5px;
 
     border-bottom: 1.5px dotted @lightgray2;
+  }
+
+  .example__slider-toggle:hover {
+    border-bottom: 1.5px solid @lightgray2;
+  }
+
+  .example__slider-toggle:active {
+    border-bottom: none;
   }
 
   .example__slider-indicator {
@@ -373,6 +404,16 @@
     box-sizing: border-box;
 
     background-color: @white;
+  }
+
+  .example__slider-indicator:hover::before {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .example__slider-indicator:active::before {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+
+    border: 2px solid @green;
   }
 
   .example__slider-indicator::after {
@@ -458,11 +499,16 @@
   }
 
   .example__digit {
+    display: inline-block;
+
     width: 28%;
+
     padding: 14px 29px 19px;
   }
 
   .example__value {
+    display: inline-block;
+
     width: 39.5%;
 
     padding: 5px 0;
@@ -473,7 +519,7 @@
     background-color: @lightgray;
   }
 
-   .example__tr:nth-child(1) {
+  .example__tr:nth-child(1) {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -540,7 +586,7 @@
     bottom: 0;
     z-index: -1;
 
-    width: 100%;
+
     min-height: 456px;
 
     background: linear-gradient(to right, @lightgray 76%, #eaeaea 76%, #eaeaea);
