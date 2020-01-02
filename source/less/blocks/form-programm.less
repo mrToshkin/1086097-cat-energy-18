@@ -6,7 +6,9 @@
 .form-programm__area[placeholder] {
   .mapa();
 
-  padding: 13px 0 13px 5%;
+  padding: 13px 14% 13px 5%;
+
+  box-sizing: border-box;
 
   border: 1px solid @lightgray;
 
@@ -35,7 +37,6 @@
   border: 1px solid #ff8282;
 }
 
-
 .form-programm__input:focus,
 .form-programm__area[placeholder]:focus {
   outline: 0;
@@ -50,12 +51,17 @@
 
 .form-programm__title {
   .mapa();
-  padding-right: 14px;
+  padding-right: 15px;
   padding-top: 10px;
 }
 
 .form-programm__star {
   .mapa();
+}
+
+.form-programm__field-cat {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .form-programm__flex-cat {
@@ -65,22 +71,18 @@
 
   width: 100%;
 
-  box-sizing: border-box;
-
   .mapa-ul();
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .form-programm__cat {
   display: flex;
   justify-content: space-between;
 
-  width: 100%;
-
   .mapa();
-  margin-bottom: 5%;
+  margin-bottom: 4%;
+
+  width: 100%;
 
   box-sizing: border-box;
 }
@@ -89,6 +91,10 @@
   flex-grow: 1;
 
   box-sizing: border-box;
+}
+
+.form-programm__cat .form-programm__input[name="age"] {
+  width: 20%;
 }
 
 .form-programm__flex-select {
@@ -208,7 +214,8 @@
   .mapa();
   margin-bottom: 9.5%;
 
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   .font-size(24px; 24px);
   font-weight: 300;
@@ -220,16 +227,18 @@
 .form-programm__field-data .form-programm__heading {
   position: relative;
 
-  width: 100%;
+  margin-bottom: 10%;
+
+  width: calc(100% - 40px);
 
   &::after {
     position: absolute;
     top: 14px;
-    right: 20px;
+    right: -20px;
 
     content: "";
 
-    width: 29%;
+    width: 34%;
     height: 3px;
 
     background-color: @green;
@@ -312,18 +321,18 @@
 .form-programm__flex-area .form-programm__heading {
   margin-top: 5%;
   margin-bottom: 13%;
+  margin-left: 0;
+  padding-top: 12px;
   padding-left: 0;
 
-  &::after {
-    right: 0;
-    width: 160px;
-  }
+  width: 100%;
 }
 
 .form-programm__area[placeholder] {
   padding-top: 12px;
   padding-bottom: 100px;
   padding-left: 15px;
+  padding-right: 10px;
 
   font-weight: 300;
 
@@ -353,7 +362,7 @@
 .form-programm__flex-add .form-programm__heading {
   position: relative;
 
-  width: 100%;
+  width: calc(100% - 40px);
 
   margin-top: 25px;
   margin-bottom: 12%;
@@ -361,11 +370,11 @@
   &::after {
     position: absolute;
     top: 15px;
-    right: 0;
+    right: -20px;
 
     content: "";
 
-    width: 45%;
+    width: 47%;
     height: 3px;
 
     background-color: @green;
@@ -380,7 +389,7 @@
   box-sizing: border-box;
 
   .mapa();
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .form-programm__title3 {
@@ -451,12 +460,12 @@
   .mapa();
   padding: 0 50px;
 
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   .font-size(14px; 16px);
 }
 
 .form-programm__button-flex {
-  margin-top: 8px;
+  margin-top: 12px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -504,28 +513,33 @@
     .font-size(20px; 20px);
     line-height: normal;
 
-    padding: 11px 0 11px 2.5%;
+    padding: 11px 0 10px 2.5%;
   }
 
   .form-programm__title {
     padding-right: 3.1%;
-    padding-top: 2%;
+  }
+
+  .form-programm__field-cat {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 42px;
+    padding-right: 37px;
   }
 
   .form-programm__cat {
-    margin-bottom: 2.8%;
+    margin-bottom: 3%;
   }
 
   .form-programm__flex-cat {
-    padding-left: 42px;
-    padding-right: 37px;
+    width: 100%;
   }
 
   .form-programm__flex-select {
     padding: 3.5% 0.5% 1.5%;
     margin-left: 42px;
     margin-right: 37px;
-    margin-top: 40px;
+    margin-top: 35px;
 
     border-top: 0;
     border-bottom: 0;
@@ -573,14 +587,17 @@
     position: relative;
 
     width: 100%;
+    margin-left: 0;
 
     padding-top: 16px;
     margin-bottom: 74px;
 
+    box-sizing: border-box;
+
     &::after {
       position: absolute;
       top: 40px;
-      right: 10px;
+      right: -30px;
 
       content: "";
 
@@ -643,17 +660,15 @@
   .form-programm__field-area {
     position: relative;
 
-    padding-left: 42px;
-    padding-right: 37px;
-
     &::after {
       display: none;
     }
   }
 
   .form-programm__flex-area {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 42px;
+    padding-right: 37px;
+    margin-top: 32px;
   }
 
   .form-programm__flex-area .form-programm__heading {
@@ -666,7 +681,7 @@
 
     &::after {
       position: absolute;
-      top: 23px;
+      top: 32px;
       right: -67px;
 
       content: "";
@@ -679,7 +694,7 @@
 
     &::before {
       position: absolute;
-      top: 23px;
+      top: 32px;
       left: -72px;
 
       content: "";
@@ -716,13 +731,19 @@
 
     width: 100%;
 
+    box-sizing: border-box;
+
+    padding-left: 42px;
+    padding-right: 37px;
     padding-top: 5px;
-    margin-bottom: 8.6%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8.3%;
 
     &::after {
       position: absolute;
       top: 25px;
-      right: 0;
+      right: -30px;
 
       content: "";
 
@@ -735,7 +756,7 @@
     &::before {
       position: absolute;
       top: 25px;
-      left: -20px;
+      left: -30px;
 
       content: "";
 
@@ -825,7 +846,7 @@
   }
 
   .form-programm__input[type="text"] {
-    padding: 11px 0 11px 3.2%;
+    padding: 11px 10% 11px 3.2%;
 
 
     box-sizing: border-box;
@@ -992,18 +1013,18 @@
 
     width: 100%;
 
-    margin-top: 4%;
+    padding-top: 48px;
     margin-bottom: 6.2%;
 
     &::after {
-      top: 23px;
+      top: 70px;
       right: 0;
 
       width: 76%;
     }
 
     &::before {
-      top: 23px;
+      top: 70px;
       left: -10px;
 
       width: 10px;
@@ -1033,6 +1054,7 @@
 
     width: 100%;
 
+    padding-left: 0;
     padding-top: 26px;
     margin-bottom: 5%;
 
