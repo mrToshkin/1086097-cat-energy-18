@@ -132,7 +132,7 @@
             </table>
             <div class="example__wrapper-slider">
               <ul class="example__list">
-                <li class="example__item">
+                <li class="example__item example__item--before">
                   <picture>
                     <source type="img/webp" media="(min-width: 1200px)"
                     srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
@@ -144,23 +144,23 @@
                     <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Борис до программы функционального питания">
                   </picture>
                 </li>
-                <li class="example__item example__image-none">
+                <li class="example__item example__item--after example__image-none">
                   <picture>
                     <source type="img/webp" media="(min-width: 1200px)"
                     srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                     <source type="img/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                    <source media="(min-width:1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                    <source media="(min-width:1200px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                     <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Борис после программы функционального питания">
                   </picture>
                 </li>
               </ul>
               <div class="example__slider-toggles">
                 <button class="example__slider-toggle example__slider-toggle-1" type="button">Было</button>
-                <button class="example__slider-toggle" type="button">Стало</button>
-                <div class="example__slider-indicator"></div>
+                <button class="example__slider-toggle example__slider-toggle-2" type="button">Стало</button>
+                <div class="example__slider example__slider-indicator"></div>
               </div>
             </div>
           </div>
@@ -176,7 +176,9 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8  <span class="contacts__city">Санкт-Петербург</span></address>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CGxZf03E" width="560" height="362" ></iframe>
+        </div>
       </section>
 
     </main>
@@ -218,27 +220,7 @@
       </div>
     </footer>
 
-    <script>
-      var mainNav = document.querySelector(".main-nav");
-      var navtoggle = document.querySelector(".main-nav__toggle");
-
-      mainNav.classList.remove("main-nav--nojs");
-
-      navtoggle.addEventListener("click", function(evt) {
-
-        evt.preventDefault();
-
-        if (mainNav.classList.contains("main-nav--closed")) {
-          mainNav.classList.remove("main-nav--closed");
-          mainNav.classList.add("main-nav--opened");
-        } else {
-          mainNav.classList.add("main-nav--closed");
-          mainNav.classList.remove("main-nav--opened");
-        }
-
-      });
-
-    </script>
+    <script src="js/slider.js"></script>
 
   </body>
 </html>
