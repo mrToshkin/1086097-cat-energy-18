@@ -220,23 +220,21 @@
     </footer>
 
     <script>
-      var main-nav = document.querySelector(".main-nav");
+      var mainNav = document.querySelector(".main-nav");
       var navtoggle = document.querySelector(".main-nav__toggle");
 
-      main-nav.classList.remove("main-nav--nojs");
+      mainNav.classList.remove("main-nav--nojs");
 
       navtoggle.addEventListener("click", function(evt) {
 
         evt.preventDefault();
 
-        if (main-nav.classList.contains("main-nav--closed")) {
-          main-nav.classList.remove("main-nav--closed");
-          main-nav.classList.add("main-nav--opened");
-        }
-
-        else {
-          main-nav.classList.remove("main-nav--opened");
-          main-nav.classList.add("main-nav--closed");
+        if (mainNav.classList.contains("main-nav--closed")) {
+          mainNav.classList.remove("main-nav--closed");
+          mainNav.classList.add("main-nav--opened");
+        } else {
+          mainNav.classList.add("main-nav--closed");
+          mainNav.classList.remove("main-nav--opened");
         }
 
       });

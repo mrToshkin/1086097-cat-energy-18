@@ -11,15 +11,16 @@
   src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
 }
 .page-header__logo {
+  display: block;
   margin: 0;
   padding: 0;
   margin: 0 auto;
   padding-left: 20px;
-  padding-bottom: 25px;
 }
 .page-header__logo-image {
   width: 191px;
   height: 60px;
+  display: block;
 }
 .page-header__logo:hover {
   opacity: 0.8;
@@ -35,6 +36,7 @@
   margin-top: 8px;
 }
 .main-nav__toggle {
+  display: block;
   margin: 0;
   padding: 0;
   margin: 0 auto;
@@ -42,7 +44,7 @@
 }
 .main-nav__toggle::after {
   position: absolute;
-  top: 32px;
+  top: 26px;
   right: 20px;
   display: block;
   content: "";
@@ -53,6 +55,17 @@
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 767px) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 .main-nav--opened .main-nav__toggle::after {
   width: 24px;
@@ -123,11 +136,16 @@
 .site-list__item {
   position: relative;
   left: 0;
+  display: block;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   border-bottom: 1px solid #cdcdcd;
   padding: 23px 30px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }
 .site-list__link {
   margin: 0;
@@ -135,15 +153,6 @@
 }
 .site-list__item:first-child {
   border-top: 1px solid #cdcdcd;
-}
-.main-nav--closed .site-list__item {
-  display: none;
-}
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-.main-nav--nojs .site-list__item {
-  display: block;
 }
 @media (min-width: 768px) {
   .site-list {
