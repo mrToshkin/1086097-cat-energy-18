@@ -32,8 +32,8 @@
   border: 1px solid @black;
 }
 
-.form-programm__input[type="text"]:invalid,
-.form-programm__area[placeholder]:invalid {
+.form-programm__input[type="text"]:invalid:valid,
+.form-programm__area[placeholder]:invalid:valid {
   border: 1px solid #ff8282;
 }
 
@@ -281,7 +281,7 @@
   background-image: url("../img/icon-phone-green.svg");
 }
 
-.form-programm__input[name="tel"]:invalid {
+.form-programm__input[name="tel"]:invalid:valid {
   background-image: url("../img/icon-phone-red.svg");
 }
 
@@ -289,7 +289,7 @@
   background-image: url("../img/icon-mail-green.svg");
 }
 
-.form-programm__input[name="mail"]:invalid {
+.form-programm__input[name="mail"]:invalid:valid {
   background-image: url("../img/icon-mail-red.svg");
 }
 
@@ -873,7 +873,7 @@
   }
 
   .form-programm__title {
-    padding-right: 3.2%;
+    padding-right: 3.3%;
     padding-top: 2%;
   }
 
