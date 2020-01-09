@@ -119,6 +119,25 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .page-main {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 73px;
+      top: -118px;
+      z-index: -1;
+
+      content: "";
+
+      width: 100%;
+      height: 696px;
+
+      background-image: linear-gradient(to right, @white 55%, @green 55%);
+    }
+  }
+
   .food {
     background-image: none;
 
@@ -133,7 +152,7 @@
 
       content: "";
 
-      width: 720px;
+      width: 660px;
       height: 696px;
 
       background-color: @green;
@@ -175,7 +194,7 @@
   .food__button {
     position: absolute;
     top: 36%;
-    left: 10px;
+    left: 40px;
 
     margin-left: 80px;
     margin-top: 150px;
