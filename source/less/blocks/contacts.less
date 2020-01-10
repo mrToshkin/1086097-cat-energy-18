@@ -45,6 +45,7 @@
 
 .contacts__map {
   display: block;
+
   position: relative;
   margin: 0 auto;
 
@@ -58,6 +59,20 @@
   background-repeat: no-repeat;
   background-size: 320px 400px;
   background-position: center top;
+}
+
+.contacts__iframe {
+  position: absolute;
+  top: 0;
+  left: auto;
+
+  width: 100%;
+
+  display: block;
+
+  .mapa();
+
+  border: 0;
 }
 
 @media (min-resolution: @retina-dppx) {
@@ -125,6 +140,10 @@
     background-position: 50% 0;
   }
 
+  .contacts__iframe {
+    min-height: 396px;
+  }
+
   @media (min-resolution: @retina-dppx) {
     .contacts__map {
       background-image: url("../img/bg-map-tablet@2x.png");
@@ -141,6 +160,10 @@
     background-position: 50% 0;
 
     padding: 200px 0;
+  }
+
+  .contacts__iframe {
+    min-height: 400px;
   }
 
   .contacts {
