@@ -3,6 +3,8 @@
 }
 
 .form-programm__input[type="text"],
+.form-programm__input[type="email"],
+.form-programm__input[type="tel"],
 .form-programm__area[placeholder] {
   .mapa();
 
@@ -23,17 +25,23 @@
 }
 
 .form-programm__input[type="text"]:hover,
-.form-programm__area[placeholder]:hover {
+.form-programm__area[placeholder]:hover,
+.form-programm__input[type="email"]:hover,
+.form-programm__input[type="tel"]:hover  {
   border: 1px solid @lightgray2;
 }
 
 .form-programm__input[type="text"]:active,
+.form-programm__input[type="tel"]:active,
+.form-programm__input[type="email"]:active,
 .form-programm__area[placeholder]:active {
   border: 1px solid @black;
 }
 
-.form-programm__input[type="text"]:invalid:valid,
-.form-programm__area[placeholder]:invalid:valid {
+.form-programm__input[type="text"]:invalid,
+.form-programm__input[type="email"]:invalid,
+.form-programm__input[type="tel"]:invalid,
+.form-programm__area[placeholder]:invalid {
   border: 1px solid #ff8282;
 }
 
@@ -261,7 +269,7 @@
   padding-right: 20px;
 }
 
-.form-programm__input[name="mail"] {
+.form-programm__input[name="mail"], {
   width: 100%;
   background-image: url("../img/icon-mail.svg");
   background-size: 17px 13px;
@@ -508,8 +516,9 @@
 
 @media (min-width: @tablet-width) {
   .form-programm__input[type="text"],
+  .form-programm__input[type="email"],
+  .form-programm__input[type="tel"],
   .form-programm__area[placeholder] {
-
     .font-size(20px; 20px);
     line-height: normal;
 
@@ -845,7 +854,9 @@
     justify-content: space-between;
   }
 
-  .form-programm__input[type="text"] {
+  .form-programm__input[type="text"],
+  .form-programm__input[type="tel"],
+  .form-programm__input[type="email"] {
     padding: 11px 10% 11px 3.2%;
 
 
