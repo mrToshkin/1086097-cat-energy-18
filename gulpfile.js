@@ -18,7 +18,6 @@ var uglify = require('gulp-uglify');
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
-
 gulp.task("clean", function () {
 return del("build");
 });
@@ -35,7 +34,6 @@ base: "source"
 .pipe(gulp.dest("build"));
 });
 
-
 gulp.task("css", function () {
 return gulp.src("source/less/style.less")
 .pipe(plumber())
@@ -46,9 +44,8 @@ return gulp.src("source/less/style.less")
 .pipe(rename("style.min.css"))
 .pipe(sourcemap.write("."))
 .pipe(gulp.dest("build/css"));
-
+.pipe(server.stream());
 });
-
 
 gulp.task("images", function () {
 return gulp.src("source/img/**/*.{png,jpg,svg}")
