@@ -18,11 +18,11 @@ var server = require("browser-sync").create();
 
 
 gulp.task("clean", function () {
- return del("build");
+return del("build");
 });
 
 gulp.task("copy", function () {
- return gulp.src([
+return gulp.src([
 "source/fonts/**/*.{woff,woff2}",
 "source/img/**",
  "source/js/**",
@@ -106,6 +106,4 @@ gulp.task("build", gulp.series(
 "html"
 ));
 
-
 gulp.task("start", gulp.series("build", "server"));
-
