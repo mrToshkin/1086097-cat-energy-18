@@ -91,9 +91,12 @@ gulp.task("jsmin", function() {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
-
 
 gulp.watch("source/less/**/*.less", gulp.series("css"));
 gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
