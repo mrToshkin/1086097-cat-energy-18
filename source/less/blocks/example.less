@@ -115,10 +115,17 @@
   .mapa-ul();
 }
 
+.example__image-abs .example__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .example__item {
   text-align: center;
 
   opacity: 0;
+
   transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -129,14 +136,9 @@
   width: 300px;
 }
 
-.example__image-abs {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .example__image-none {
   opacity: 1;
+
   transition: 0.8s cubic-bezier(0.6, 0, 0.3, 1);
 }
 
@@ -674,7 +676,7 @@
 
     min-height: 456px;
 
-    background: linear-gradient(to right, @lightgray 76%, #eaeaea 76%, #eaeaea);
+    background: linear-gradient(to right, @lightgray 75%, #eaeaea 75%, #eaeaea);
     background-position: center center;
   }
 
