@@ -3,6 +3,8 @@
 }
 
 .form-programm__input[type="text"],
+.form-programm__input[id="tel"],
+.form-programm__input[id="mail"],
 .form-programm__area[placeholder] {
   .mapa();
 
@@ -10,7 +12,7 @@
 
   box-sizing: border-box;
 
-  border: 1px solid @lightgray;
+  border: 1px solid fade(@lightgray2, 50%);
 
   font-family: "Oswald", "Arial", sans-serif;
   .font-size(16px; 18px);
@@ -19,27 +21,36 @@
 
   color: @l-black;
 
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, border 0.2s ease-in-out;
 }
 
 .form-programm__input[type="text"]:hover,
+.form-programm__input[id="tel"]:hover,
+.form-programm__input[id="mail"]:hover,
 .form-programm__area[placeholder]:hover {
   border: 1px solid @lightgray2;
+
+  transition: border 0.3s ease-in-out;
 }
 
 .form-programm__input[type="text"]:active,
+.form-programm__input[id="tel"]:active,
+.form-programm__input[id="mail"]:active,
 .form-programm__area[placeholder]:active {
-  border: 1px solid @black;
+  border: 1px solid @gray;
+
+  box-shadow: 0 0 0 1px @gray;
+  transition: all 0.2s ease-in-out;
 }
 
-// .form-programm__input[type="text"]:invalid:not(:placeholder-shown),
-// .form-programm__area[placeholder]:invalid:not(:placeholder-shown) {
-//   border: 1px solid #ff8282;
-// }
-
 .form-programm__input[type="text"]:focus:invalid,
+.form-programm__input[id="tel"]:focus:invalid,
+.form-programm__input[id="mail"]:focus:invalid,
 .form-programm__area[placeholder]:focus:invalid {
   border: 1px solid #ff8282;
+
+  box-shadow: 0 0 0 1px #ff8282, 0 0 6px 4px lightblue;
+  transition: all 0.2s ease-in-out;
 }
 
 .form-programm__input:focus,
@@ -513,12 +524,20 @@
 
 @media (min-width: @tablet-width) {
   .form-programm__input[type="text"],
+  .form-programm__input[id="tel"],
+  .form-programm__input[id="mail"],
   .form-programm__area[placeholder] {
-
     .font-size(20px; 20px);
     line-height: normal;
 
     padding: 11px 0 10px 2.5%;
+  }
+
+  .form-programm__area[placeholder]:active {
+    border: 1px solid @gray;
+
+    box-shadow: 0 0 0 1px @gray, 0 0 6px 4px lightblue;
+    transition: all 0.2s ease-in-out;
   }
 
   .form-programm__title {
@@ -548,7 +567,7 @@
 
     border-top: 0;
     border-bottom: 0;
-    border: 1px solid @lightgray;
+    border: 1px solid fade(@lightgray2, 50%);
   }
 
   .form-programm__title2 {
@@ -850,7 +869,9 @@
     justify-content: space-between;
   }
 
-  .form-programm__input[type="text"] {
+  .form-programm__input[type="text"],
+  .form-programm__input[id="tel"],
+  .form-programm__input[id="mail"] {
     padding: 11px 10% 11px 3.2%;
 
     box-sizing: border-box;

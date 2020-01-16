@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
     <script>
@@ -111,18 +113,18 @@
               <ul class="form-programm__flex-data">
                 <li class="form-programm__data">
                   <label class="form-programm__title" for="mail">e-mail:<sup>*</sup></label>
-                  <input class="form-programm__input" type="text" id="mail" name="mail" value="" placeholder="leonov-nic@ya.ru" required="">
+                  <input class="form-programm__input" type="email" id="mail" name="mail" value="" placeholder="leonov-nic@ya.ru" required="">
                 </li>
                 <li class="form-programm__data">
                   <label class="form-programm__title" for="tel">телефон:<sup>*</sup></label>
-                  <input class="form-programm__input" type="text" id="tel" name="tel" value="" placeholder="8-906-900-09-09" required="">
+                  <input class="form-programm__input" type="tel" id="tel" name="tel" value="" placeholder="8-906-900-09-09" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form-programm__field form-programm__field-area form-programm__flex-area">
-                <legend class="form-programm__heading" for="area">Комментарий</legend>
-                <textarea class="form-programm__area" name="area" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <label class="form-programm__heading" for="area">Комментарий</label>
+                <textarea class="form-programm__area" id="area" name="area" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
             <fieldset class="form-programm__field form-programm__flex-add">
@@ -205,14 +207,14 @@
 
           <div class="page-footer__wrapper-academy">
             <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive"><p>HTML Academy</p></a>
-            <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип html-academy"><svg class="page-footer__academy-sign" role="img" width="27" height="34.3"><use xlink:href="#html-academy"></use></svg></a>
+            <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип html-academy"><svg class="page-footer__academy-sign" role="img" width="27" height="34"><use xlink:href="#html-academy"></use></svg></a>
           </div>
 
         </div>
       </div>
     </footer>
 
-    <script src="js/slider.min.js"></script>
+    <script src="js/button.min.js"></script>
   </body>
 
 </html>
