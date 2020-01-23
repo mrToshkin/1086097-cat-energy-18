@@ -18,10 +18,6 @@
   padding: 23px 30px;
 }
 
-.main-nav__list {
-  .mapa();
-}
-
 .site-list__link {
   .mapa();
 }
@@ -89,10 +85,12 @@
     }
   }
 
-  .site-list__item-catalog--active {
+  .site-list__link--green {
+    position: relative;
+
     &::after {
       position: absolute;
-      bottom: -10px;
+      bottom: -7px;
       left: 0;
 
       content: "";
@@ -116,7 +114,7 @@
     opacity: 0.3;
   }
 
-  .site-list__item-catalog--active .site-list__link:hover {
+  .site-list__link--green.site-list__link:hover {
     opacity: 1;
   }
 

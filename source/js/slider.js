@@ -18,8 +18,8 @@ navtoggle.addEventListener("click", function(evt) {
   }
 });
 
-var toggleOne = document.querySelector(".example__slider-toggle-1");
-var toggleTwo = document.querySelector(".example__slider-toggle-2");
+var toggleOne = document.querySelector(".example__slider-toggle--1");
+var toggleTwo = document.querySelector(".example__slider-toggle--2");
 var after = document.querySelector(".example__item--after");
 var before = document.querySelector(".example__item--before");
 var ind = document.querySelector(".example__slider");
@@ -28,9 +28,9 @@ toggleTwo.addEventListener("click", function(evt) {
 
   evt.preventDefault();
 
-  before.classList.remove("example__image-none");
-  after.classList.add("example__image-none");
-  ind.classList.remove("example__slider-indicator");
+  before.classList.remove("image-active");
+  after.classList.add("image-active");
+  ind.classList.remove("example__slider--indicator");
   ind.classList.add("example__slider-indicator--two");
 });
 
@@ -38,8 +38,8 @@ toggleOne.addEventListener("click", function(evt) {
 
   evt.preventDefault();
 
-  before.classList.add("example__image-none");
-  after.classList.remove("example__image-none");
-  ind.classList.add("example__slider-indicator");
+  before.classList.add("image-active");
+  after.classList.remove("image-active");
+  ind.classList.add("example__slider--indicator");
   ind.classList.remove("example__slider-indicator--two");
 });

@@ -54,7 +54,7 @@
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item "><a class="site-list__link--index site-list__item--active">главная</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--index">главная</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--index" href="catalog.html">каталог продукции</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--index" href="form.html">подбор программы</a></li>
           </ul>
@@ -79,7 +79,7 @@
 
             <source media="(min-width:1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width:768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-            <img class="food-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Питание для котов Cat-energy Курица">
+            <img class="food__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Питание для котов Cat-energy Курица">
           </picture>
           <a class="button food__button" href="form.html">Подобрать программу</a>
         </div>
@@ -139,7 +139,7 @@
             </table>
             <div class="example__wrapper-slider">
               <ul class="example__list">
-                <li class="example__item example__item--before example__image-none">
+                <li class="example__item example__item--before image-active">
                   <picture>
                     <source type="img/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -150,7 +150,7 @@
                     <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Борис до программы функционального питания">
                   </picture>
                 </li>
-                <li class="example__item example__item--after example__image-abs">
+                <li class="example__item example__item--after">
                   <picture>
                     <source type="img/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
@@ -162,9 +162,9 @@
                 </li>
               </ul>
               <div class="example__slider-toggles">
-                <button class="example__slider-toggle example__slider-toggle-1" type="button">Было</button>
-                <button class="example__slider-toggle example__slider-toggle-2" type="button">Стало</button>
-                <div class="example__slider example__slider-indicator">
+                <button class="example__slider-toggle example__slider-toggle--1" type="button">Было</button>
+                <button class="example__slider-toggle example__slider-toggle--2" type="button">Стало</button>
+                <div class="example__slider example__slider--indicator">
                   <p class="visually-hidden">Борис до и после программы функционального питания</p>
                 </div>
               </div>
