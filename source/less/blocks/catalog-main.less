@@ -1,0 +1,49 @@
+.catalog-main {
+  max-width: @mobile-width-only;
+  margin: 0 auto;
+}
+
+.catalog-main__heading {
+  .mapa();
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  margin-top: 14px;
+
+  border-bottom: 1px solid @lightgray2;
+
+  .font-size(36px; 60px);
+  font-weight: 300;
+
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-main {
+    max-width: 100%;
+  }
+
+  .catalog-main__heading {
+    padding: 0;
+    padding-bottom: 167px;
+    margin-top: 55px;
+
+    border-bottom: 0;
+
+    .font-size(60px; 60px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-main {
+    max-width: 100%;
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .catalog-main__heading {
+    padding-bottom: 167px;
+    margin-top: 68px;
+  }
+}
