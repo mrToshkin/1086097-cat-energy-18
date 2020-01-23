@@ -1,7 +1,3 @@
-.page-form {
-  margin: 0 auto;
-}
-
 .form-programm__input[type="text"],
 .form-programm__input[id="tel"],
 .form-programm__input[id="mail"],
@@ -19,7 +15,7 @@
   font-weight: 300;
   text-transform: uppercase;
 
-  color: @l-black;
+  color: @gray;
 
   transition: box-shadow 0.5s ease-in-out, border 0.2s ease-in-out;
 }
@@ -56,7 +52,11 @@
 .form-programm__input:focus,
 .form-programm__area[placeholder]:focus {
   outline: 0;
-  box-shadow: 0 0 6px 4px lightblue;
+  border: 1px solid @gray;
+
+  box-shadow: 0 0 0 1px @gray;
+
+  color: @gray;
 }
 
 .form-programm__field {
@@ -75,7 +75,7 @@
   .mapa();
 }
 
-.form-programm__field-cat {
+.form-programm__field--cat {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -240,7 +240,7 @@
   color: @black;
 }
 
-.form-programm__field-data .form-programm__heading {
+.form-programm__field--data .form-programm__heading {
   position: relative;
 
   margin-bottom: 10%;
@@ -317,7 +317,7 @@
   padding-right: 20px;
 }
 
-.form-programm__field-area {
+.form-programm__field--area {
   position: relative;
 
   &::after {
@@ -355,7 +355,7 @@
   width: 100%;
 }
 
-.form-programm__flex-add {
+.form-programm__flex--add {
   position: relative;
 
   display: flex;
@@ -375,7 +375,7 @@
   padding-right: 20px;
 }
 
-.form-programm__flex-add .form-programm__heading {
+.form-programm__flex--add .form-programm__heading {
   position: relative;
 
   width: calc(100% - 40px);
@@ -472,14 +472,6 @@
   }
 }
 
-.programm__small {
-  .mapa();
-  padding: 0 50px;
-
-  font-family: "Arial", "Tahoma", sans-serif;
-  .font-size(14px; 16px);
-}
-
 .form-programm__button-flex {
   margin-top: 12px;
   padding-left: 20px;
@@ -544,7 +536,7 @@
     padding-right: 20px;
   }
 
-  .form-programm__field-cat {
+  .form-programm__field--cat {
     margin-left: 0;
     margin-right: 0;
     padding-left: 42px;
@@ -607,7 +599,7 @@
     padding-left: 42px;
   }
 
-  .form-programm__field-data .form-programm__heading {
+  .form-programm__field--data .form-programm__heading {
     position: relative;
 
     width: 100%;
@@ -681,7 +673,7 @@
     display: none;
   }
 
-  .form-programm__field-area {
+  .form-programm__field--area {
     position: relative;
 
     &::after {
@@ -740,7 +732,7 @@
     box-sizing: border-box;
   }
 
-  .form-programm__flex-add {
+  .form-programm__flex--add {
     position: relative;
 
     display: flex;
@@ -750,7 +742,7 @@
     width: 100%;
   }
 
-  .form-programm__flex-add .form-programm__heading {
+  .form-programm__flex--add .form-programm__heading {
     position: relative;
 
     width: 100%;
@@ -810,7 +802,6 @@
     padding-top: 6px;
     padding-left: 57px;
   }
-
 
   .form-programm__add .form-programm__checkbox-indicator {
     &::after {
@@ -883,7 +874,7 @@
     box-sizing: border-box;
   }
 
-  .form-programm__field-cat {
+  .form-programm__field--cat {
     width: 46.7%;
 
     .mapa();
@@ -913,7 +904,7 @@
     box-sizing: border-box;
   }
 
-  .form-programm__field-select {
+  .form-programm__field--select {
     width: 46.7%;
   }
 
@@ -946,7 +937,7 @@
     margin-bottom: 74px;
   }
 
-  .form-programm__field-data {
+  .form-programm__field--data {
     margin-top: 52px;
 
     &::after {
@@ -958,7 +949,7 @@
     }
   }
 
-  .form-programm__field-data .form-programm__heading {
+  .form-programm__field--data .form-programm__heading {
     position: relative;
     width: 100%;
 
@@ -1027,7 +1018,7 @@
     background-position: 96% center;
   }
 
-  .form-programm__field-area {
+  .form-programm__field--area {
     padding-left: 0;
     padding-right: 0;
     margin-top: 0;
@@ -1062,7 +1053,7 @@
     padding-top: 7px;
   }
 
-  .form-programm__flex-add {
+  .form-programm__flex--add {
     margin-top: 40px;
 
     &::after {
@@ -1074,7 +1065,7 @@
     }
   }
 
-  .form-programm__flex-add .form-programm__heading {
+  .form-programm__flex--add .form-programm__heading {
     position: relative;
 
     width: 100%;
@@ -1130,13 +1121,14 @@
     width: 20%;
 
     .mapa();
+    margin-bottom: 40px;
   }
 
   .form-programm__button-flex {
     justify-content: flex-start;
 
     padding: 0;
-    margin: 70px 0 12px;
+    margin: 30px 0 12px;
 
     width: 100%;
   }
